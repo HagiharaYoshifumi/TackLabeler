@@ -13,6 +13,13 @@ Public Class FrmWordInsData
     Dim _T As LocalTabCollection = Nothing
     Dim _P As ClassPaperCollection = Nothing
     Dim _WorkCancel As Boolean = False
+#Region "Property"
+    ''' <summary>
+    ''' 選択タブインデックス
+    ''' </summary>
+    ''' <value></value>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
     Property SelectTabIndex As Integer
         Get
             Return _TabIndex
@@ -45,6 +52,7 @@ Public Class FrmWordInsData
             _P = value
         End Set
     End Property
+#End Region
 
     Private Sub FrmWordInsData_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
         Me.Dispose()
@@ -56,7 +64,12 @@ Public Class FrmWordInsData
             e.Cancel = True
         End If
     End Sub
-
+    ''' <summary>
+    ''' フォームロード
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
     Private Sub FrmWordInsData_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         If Not IsNothing(_P) Then
@@ -91,6 +104,12 @@ Public Class FrmWordInsData
         End If
 
     End Sub
+    ''' <summary>
+    ''' WORD文書がドロップされた
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
     Private Sub TxtMasterWord_DragDrop(sender As Object, e As DragEventArgs) Handles TxtMasterWord.DragDrop
         Dim fileName As String() = CType(e.Data.GetData(DataFormats.FileDrop, False), String())
         If fileName.Length > 0 Then
@@ -110,6 +129,12 @@ Public Class FrmWordInsData
             e.Effect = DragDropEffects.None
         End If
     End Sub
+    ''' <summary>
+    ''' 出力先フォルダがドロップされた
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
     Private Sub TxtOutputFolder_DragDrop(sender As Object, e As DragEventArgs) Handles TxtOutputFolder.DragDrop
         Dim fileName As String() = CType(e.Data.GetData(DataFormats.FileDrop, False), String())
         If fileName.Length > 0 Then
@@ -129,16 +154,28 @@ Public Class FrmWordInsData
             e.Effect = DragDropEffects.None
         End If
     End Sub
+    ''' <summary>
+    ''' パスとファイル名を結合する
+    ''' </summary>
+    ''' <param name="DirName"></param>
+    ''' <param name="FileName"></param>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
     Public Function ConcatPath(DirName As String, ByVal FileName As String) As String
 
         Return My.Computer.FileSystem.CombinePath(DirName, FileName)
 
     End Function
    
-    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs)
-        Me.Close()
-    End Sub
-
+    'Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs)
+    '    Me.Close()
+    'End Sub
+    ''' <summary>
+    ''' 出力先選択ボタン
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
     Private Sub BtnSelFolder_Click(sender As Object, e As EventArgs) Handles BtnSelFolder.Click
         Using VistaFolderBrowserDialog1 As New Ookii.Dialogs.VistaFolderBrowserDialog
             With VistaFolderBrowserDialog1
@@ -151,7 +188,12 @@ Public Class FrmWordInsData
             End With
         End Using
     End Sub
-
+    ''' <summary>
+    ''' 元WORD文書を開く
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         If TxtMasterWord.Text <> "" Then
             If File.Exists(TxtMasterWord.Text) Then
@@ -163,7 +205,12 @@ Public Class FrmWordInsData
             End If
         End If
     End Sub
-
+    ''' <summary>
+    ''' 出力先フォルダを開く
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
     Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
         If TxtOutputFolder.Text <> "" Then
             If Directory.Exists(TxtOutputFolder.Text) Then
@@ -171,7 +218,12 @@ Public Class FrmWordInsData
             End If
         End If
     End Sub
-
+    ''' <summary>
+    ''' WORD文書選択ボタン
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
     Private Sub BtnSelWord_Click(sender As Object, e As EventArgs) Handles BtnSelWord.Click
         Dim FL As String = ""
         Using OFD As New OpenFileDialog
@@ -180,7 +232,7 @@ Public Class FrmWordInsData
                 .CheckFileExists = True
                 .CheckPathExists = True
                 .DefaultExt = ".docx"
-                .Filter = "WORD文書(*.doc,*.docx)|*.doc;*.docx|全てのファイル(*.*)|*.*"
+                .Filter = "Word文書(*.doc,*.docx)|*.doc;*.docx|全てのファイル(*.*)|*.*"
                 .FilterIndex = 0
                 .Multiselect = False
                 .RestoreDirectory = True
@@ -194,7 +246,12 @@ Public Class FrmWordInsData
             TxtMasterWord.Text = FL
         End If
     End Sub
-
+    ''' <summary>
+    ''' 出力名選択チェックボックス
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
         'チェック出来るのは１行だけ
         If e.ColumnIndex = ColFileNameCheck Then
@@ -206,15 +263,24 @@ Public Class FrmWordInsData
             Next
         End If
     End Sub
-
+    ''' <summary>
+    ''' 画面の切替
+    ''' </summary>
+    ''' <param name="Value"></param>
+    ''' <remarks></remarks>
     Private Sub ScreenChange(Value As Boolean)
         MenuClose.Enabled = Value
         MenuExecute.Enabled = Value
         MenuCancel.Enabled = Not Value
         Panel1.Enabled = Value
     End Sub
-    Dim _IsWork As Boolean = False
-
+    Dim _IsWork As Boolean = False '作業中フラグ
+    ''' <summary>
+    ''' 実行メニュー
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
     Private Sub MenuExecute_Click(sender As Object, e As EventArgs) Handles MenuExecute.Click
         DataGridView1.EndEdit()
 
@@ -239,7 +305,7 @@ Public Class FrmWordInsData
                 Return
             End If
         Else
-            If MsgBox("差し込みWORDファイルを作成していいですか？", 4 + 32, "確認") = MsgBoxResult.No Then
+            If MsgBox("差し込みWordファイルを作成していいですか？", 4 + 32, "確認") = MsgBoxResult.No Then
                 Return
             End If
         End If
@@ -250,6 +316,7 @@ Public Class FrmWordInsData
         _IsWork = True
         With FrmMain.SS.ActiveSheet
             Dim C As Integer = 0
+            '出力対象文書数を数える
             For Row As Integer = 0 To .RowCount - 1
                 If FG(.Cells(Row, 0).Value, enum_FG.FG_Boolean) = True Then
                     C += 1
@@ -274,6 +341,7 @@ Public Class FrmWordInsData
                         Dim FDArray As New ArrayList
                         Dim DTArray As New ArrayList
 
+                        'フィールド名とデータの変数を作成する
                         For RowD As Integer = 0 To DataGridView1.RowCount - 1
                             Dim FD As String = DataGridView1.Rows(RowD).Cells(ColFieldName).Value
                             Dim SSInsex As Integer = CInt(Replace(DataGridView1.Rows(RowD).Cells(ColSystemFieldName).Value.ToString, "Field", ""))
@@ -331,13 +399,23 @@ Public Class FrmWordInsData
             End If
         End If
     End Sub
-
+    ''' <summary>
+    ''' キャンセルメニュー
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
     Private Sub MenuCancel_Click(sender As Object, e As EventArgs) Handles MenuCancel.Click
         _WorkCancel = True
         LblMessage.Text = "キャンセル中です。しばらくお待ちください"
         Application.DoEvents()
     End Sub
-
+    ''' <summary>
+    ''' コンテキストメニューの表示
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
     Private Sub DataGridView1_MouseDown(sender As Object, e As MouseEventArgs) Handles DataGridView1.MouseDown
         If e.Button = Windows.Forms.MouseButtons.Right Then
             If DataGridView1.RowCount > 0 Then
@@ -345,7 +423,12 @@ Public Class FrmWordInsData
             End If
         End If
     End Sub
-
+    ''' <summary>
+    ''' 単一フィールド名の取得
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
     Private Sub MenuFieldName_Click(sender As Object, e As EventArgs) Handles MenuFieldName.Click
         If DataGridView1.RowCount > 0 Then
             If DataGridView1.SelectedCells.Count > 0 Then
@@ -361,7 +444,12 @@ Public Class FrmWordInsData
 
         End If
     End Sub
-
+    ''' <summary>
+    ''' 全フィールド名の出力
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
     Private Sub MenuFieldName_All_Click(sender As Object, e As EventArgs) Handles MenuFieldName_All.Click
         If DataGridView1.RowCount > 0 Then
             If DataGridView1.SelectedCells.Count > 0 Then
@@ -381,7 +469,12 @@ Public Class FrmWordInsData
 
         End If
     End Sub
-
+    ''' <summary>
+    ''' 閉じるメニュー
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
     Private Sub MenuClose_Click(sender As Object, e As EventArgs) Handles MenuClose.Click
         Me.Close()
     End Sub

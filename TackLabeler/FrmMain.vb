@@ -2936,7 +2936,7 @@ Public Class FrmMain
     ''' <param name="e"></param>
     ''' <remarks></remarks>
     Private Sub TabControlEx1_DoubleClick(sender As Object, e As EventArgs) Handles GcTabControl1.MouseDoubleClick
-        Call BtnTabEdit_Click(Nothing, Nothing)
+        'Call BtnTabEdit_Click(Nothing, Nothing)
     End Sub
     Dim _MouseButtonStat As Boolean = False 'タブ操作時のマウス状態
 

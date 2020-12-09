@@ -64,38 +64,42 @@ Module ModuleWord
     ''' <returns></returns>
     ''' <remarks></remarks>
     Public Function CreateWord2Word(Field As ArrayList, Data As ArrayList, MasterDoc As String, SaveFileName As String) As String
+        Try
+            If MasterDoc <> "" AndAlso File.Exists(MasterDoc) Then
+                'マスタ文書からコピーを作成する
+                File.Copy(MasterDoc, SaveFileName)
 
-        If MasterDoc <> "" AndAlso File.Exists(MasterDoc) Then
-            'マスタ文書からコピーを作成する
-            File.Copy(MasterDoc, SaveFileName)
+                Dim word As Word.Application = New Word.Application()
+                '{DATE}{POST}　{ADDRESS}{COMPANY} {POSITION} {NAME}様{TEL}{FAX}
+                'Word の GUI を起動しないようにする
+                word.Visible = False
 
-            Dim word As Word.Application = New Word.Application()
-            '{DATE}{POST}　{ADDRESS}{COMPANY} {POSITION} {NAME}様{TEL}{FAX}
-            'Word の GUI を起動しないようにする
-            word.Visible = False
+                ' 既存文書を開く
+                Dim document As Document = word.Documents.Open(SaveFileName)
+                Dim Ex As String = Path.GetExtension(SaveFileName)
 
-            ' 既存文書を開く
-            Dim document As Document = word.Documents.Open(SaveFileName)
-            Dim Ex As String = Path.GetExtension(SaveFileName)
+                'Dim C As Integer = 1
+                'For Each Itm As String In Data
+                '    Call SelectionFind(document, String.Format("<FIELD{0}>", C), Itm)
+                '    C += 1
+                'Next
 
-            'Dim C As Integer = 1
-            'For Each Itm As String In Data
-            '    Call SelectionFind(document, String.Format("<FIELD{0}>", C), Itm)
-            '    C += 1
-            'Next
+                For i As Integer = 0 To Field.Count - 1
+                    Call SelectionFind(document, String.Format("<{0}>", Field(i)), Data(i))
+                Next
+                document.Close()
+                document = Nothing
+                word.Quit()
+                word = Nothing
 
-            For i As Integer = 0 To Field.Count - 1
-                Call SelectionFind(document, String.Format("<{0}>", Field(i)), Data(i))
-            Next
-            document.Close()
-            document = Nothing
-            word.Quit()
-            word = Nothing
+                Return SaveFileName.ToString
+            Else
+                Return ""
+            End If
 
-            Return SaveFileName.ToString
-        Else
+        Catch ex As Exception
             Return ""
-        End If
+        End Try
 
     End Function
     ''' <summary>
@@ -106,15 +110,20 @@ Module ModuleWord
     ''' <param name="RepText">置き換える文字列</param>
     ''' <remarks></remarks>
     Private Sub SelectionFind(document As Document, MasterText As String, RepText As String)
-        For Each section As Section In document.Sections
-            Dim FindObject As Word.Find = section.Range.Find
-            With FindObject
-                .ClearFormatting()
-                .Text = MasterText
-                .Replacement.ClearFormatting()
-                .Replacement.Text = RepText
-                .Execute(Replace:=Word.WdReplace.wdReplaceAll)
-            End With
-        Next
+        Try
+            For Each section As Section In document.Sections
+                Dim FindObject As Word.Find = section.Range.Find
+                With FindObject
+                    .ClearFormatting()
+                    .Text = MasterText
+                    .Replacement.ClearFormatting()
+                    .Replacement.Text = RepText
+                    .Execute(Replace:=Word.WdReplace.wdReplaceAll)
+                End With
+            Next
+
+        Catch ex As Exception
+
+        End Try
     End Sub
 End Module

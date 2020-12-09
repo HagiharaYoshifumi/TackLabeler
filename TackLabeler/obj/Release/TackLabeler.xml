@@ -6,278 +6,129 @@ TackLabeler
 </name>
 </assembly>
 <members>
-<member name="M:TackLabeler.ModuleStringReplace.StringReplace(System.String,System.String,System.String,System.Int32,System.Globalization.CompareInfo,System.Globalization.CompareOptions)">
+<member name="M:TackLabeler.FrmExcelInsData.FrmWordInsData_Load(System.Object,System.EventArgs)">
 	<summary>
- 指定した文字列内の指定した文字列を別の文字列に置換する。
+ フォールロード
  </summary>
-	<param name="input">置換する文字列のある文字列。</param>
-	<param name="oldValue">検索文字列。</param>
-	<param name="newValue">置換文字列。</param>
-	<param name="count">置換する回数。負の数が指定されたときは、すべて置換する。</param>
-	<param name="compInfo">文字列の検索に使用するCompareInfo。</param>
-	<param name="compOptions">文字列の検索に使用するCompareOptions。</param>
-	<returns>置換された結果の文字列。</returns>
-</member><member name="M:TackLabeler.ModuleStringReplace.StringReplace(System.String,System.String,System.String,System.Int32,System.Boolean)">
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmExcelInsData.GetSheetName">
 	<summary>
- 指定した文字列内の指定した文字列を別の文字列に置換する。
+ シート名の一覧
  </summary>
-	<param name="input">置換する文字列のある文字列。</param>
-	<param name="oldValue">検索文字列。</param>
-	<param name="newValue">置換文字列。</param>
-	<param name="count">置換する回数。負の数が指定されたときは、すべて置換する。</param>
-	<param name="ignoreCase">大文字と小文字を区別しない時はTrue。</param>
-	<returns>置換された結果の文字列。</returns>
-</member><member name="M:TackLabeler.ModuleStringReplace.StringReplace(System.String,System.String,System.String,System.Int32)">
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmExcelInsData.TxtMasterWord_DragDrop(System.Object,System.Windows.Forms.DragEventArgs)">
 	<summary>
- 指定した文字列内の指定した文字列を別の文字列に置換する。
+ Excel文書がドロップされた
  </summary>
-	<param name="input">置換する文字列のある文字列。</param>
-	<param name="oldValue">検索文字列。</param>
-	<param name="newValue">置換文字列。</param>
-	<param name="count">置換する回数。負の数が指定されたときは、すべて置換する。</param>
-	<returns>置換された結果の文字列。</returns>
-</member><member name="M:TackLabeler.ModuleExcel.CreateExcel2Excel(System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.String,System.String)">
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmExcelInsData.TxtOutputFolder_DragDrop(System.Object,System.Windows.Forms.DragEventArgs)">
 	<summary>
- 既存EXCEL文書を編集し別名ファイルにする
+ 出力先フォルダがドロップされた
  </summary>
-	<param name="Field"></param>
-	<param name="Data"></param>
-	<param name="MasterDoc"></param>
-	<param name="SaveFileName"></param>
-	<param name="SheetName"></param>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmExcelInsData.ConcatPath(System.String,System.String)">
+	<summary>
+ パスとファイル名を結合する
+ </summary>
+	<param name="DirName"></param>
+	<param name="FileName"></param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:TackLabeler.ModuleWord.CreateWord2PDF(System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.String)">
+</member><member name="M:TackLabeler.FrmExcelInsData.BtnSelFolder_Click(System.Object,System.EventArgs)">
 	<summary>
- 既存WORD文書を編集しPDFファイルにする
+ 出力先選択ボタン
  </summary>
-	<param name="Data"></param>
-	<param name="MasterDoc"></param>
-	<param name="SaveFileName"></param>
-	<returns></returns>
+	<param name="sender"></param>
+	<param name="e"></param>
 	<remarks></remarks>
-</member><member name="M:TackLabeler.ModuleWord.CreateWord2Word(System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.String)">
+</member><member name="M:TackLabeler.FrmExcelInsData.LinkLabel1_LinkClicked(System.Object,System.Windows.Forms.LinkLabelLinkClickedEventArgs)">
 	<summary>
- 既存WORD文書を編集し別名ファイルにする
+ Excel文書を開く
  </summary>
-	<param name="Data"></param>
-	<param name="MasterDoc"></param>
-	<param name="SaveFileName"></param>
-	<returns></returns>
+	<param name="sender"></param>
+	<param name="e"></param>
 	<remarks></remarks>
-</member><member name="M:TackLabeler.ModuleWord.SelectionFind(Microsoft.Office.Interop.Word.Document,System.String,System.String)">
+</member><member name="M:TackLabeler.FrmExcelInsData.LinkLabel2_LinkClicked(System.Object,System.Windows.Forms.LinkLabelLinkClickedEventArgs)">
 	<summary>
- 所定文字列を置き換える
+ 出力先フォルダを開く
  </summary>
-	<param name="document">対象DOCUMENTオブジェクト</param>
-	<param name="MasterText">置き換え対象文字列</param>
-	<param name="RepText">置き換える文字列</param>
+	<param name="sender"></param>
+	<param name="e"></param>
 	<remarks></remarks>
-</member><member name="T:TackLabeler.ModuleWord">
+</member><member name="M:TackLabeler.FrmExcelInsData.BtnSelWord_Click(System.Object,System.EventArgs)">
 	<summary>
- WORD操作モジュール
+ Excel文書の選択ボタン
  </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
 	<remarks></remarks>
-</member><member name="M:TackLabeler.Module1.NFuncSystemFullPath(System.Environment.SpecialFolder,System.String)">
+</member><member name="M:TackLabeler.FrmExcelInsData.DataGridView1_CellContentClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
 	<summary>
- 特殊フォルダパスを検索する
+ 出力ファイル名選択チェックボックス
  </summary>
-	<param name="TargetFolder">対象となる特殊フォルダ</param>
-	<param name="FileName">ファイル名</param>
-	<returns>ファイル名を含むフルパス</returns>
-	<remarks>ファイル名指定時
- ファイル名指定時はファイル名を含むフルパスを返します。(特殊フォルダ名＋固定フォルダ名＋ファイル名)またその特殊フォルダが無い場合は自動的に作成されます。
- ファイル名が未指定の場合は特殊フォルダのパスを返します。(特殊フォルダ名＋固定フォルダ）但しこのフォルダの自動作成は行われません
- 　　また、特殊フォルダ自体が存在しない場合は””が帰ります。
- </remarks>
-</member><member name="M:TackLabeler.Module1.CsvToArrayList2(System.String)">
-	<summary>
- CSVをArrayListに変換
- </summary>
-	<param name="csvText">CSVの内容が入ったString</param>
-	<returns>変換結果のArrayList</returns>
-</member><member name="M:TackLabeler.Module1.LicenseCheck(System.String)">
-	<summary>
- ライセンスコードの確認
- </summary>
-	<param name="Code">確認するライセンス文字列</param>
-	<returns>True:ライセンスOK</returns>
-	<remarks>
- ライセンスコード内容：［PC名］|［TACKLABELER.EXE(固定値)］|［コード生成タイムスタンプ］
- </remarks>
-</member><member name="M:TackLabeler.Module1.CountChar(System.String,System.Char)">
-	<summary>
- 特定文字数を数える
- </summary>
-	<param name="s"></param>
-	<param name="c"></param>
-	<returns></returns>
+	<param name="sender"></param>
+	<param name="e"></param>
 	<remarks></remarks>
-</member><member name="M:TackLabeler.Module1.CreateGUID">
+</member><member name="M:TackLabeler.FrmExcelInsData.ScreenChange(System.Boolean)">
 	<summary>
- GUIDを作成する
+ 画面の切替
  </summary>
-	<returns></returns>
+	<param name="Value"></param>
 	<remarks></remarks>
-</member><member name="M:TackLabeler.Module2.GetStack(System.Exception)">
+</member><member name="M:TackLabeler.FrmExcelInsData.MenuExecute_Click(System.Object,System.EventArgs)">
 	<summary>
- エラースタックの取得
+ 作業開始メニュー
  </summary>
-	<param name="exd">エラーException</param>
-	<returns>エラー発生状況のStackDataCollection</returns>
-	<remarks>
- 使用例：MsgBox( String.Format("Location:[{0}]-[{1}](Line:{2})", ST.ClassName, ST.MetodName, ST.LineNo))
- </remarks>
-</member><member name="M:TackLabeler.Module2.ExMessCreater(TackLabeler.StackDataCollection,System.String)">
-	<summary>
- スタック付きメッセージの作成
- </summary>
-	<param name="ST"></param>
-	<returns></returns>
+	<param name="sender"></param>
+	<param name="e"></param>
 	<remarks></remarks>
-</member><member name="F:TackLabeler.StackDataCollection.Message">
+</member><member name="M:TackLabeler.FrmExcelInsData.MenuCancel_Click(System.Object,System.EventArgs)">
 	<summary>
- エラーメッセージ
+ 作業中止メニュー
  </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
 	<remarks></remarks>
-</member><member name="F:TackLabeler.StackDataCollection.ClassName">
+</member><member name="M:TackLabeler.FrmExcelInsData.DataGridView1_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
 	<summary>
- スタッククラス名
+ コンテキストメニューの表示
  </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
 	<remarks></remarks>
-</member><member name="F:TackLabeler.StackDataCollection.MetodName">
+</member><member name="M:TackLabeler.FrmExcelInsData.MenuFieldName_Click(System.Object,System.EventArgs)">
 	<summary>
- スタックメソッド名
+ 単一フィールド名の出力
  </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
 	<remarks></remarks>
-</member><member name="F:TackLabeler.StackDataCollection.LineNo">
+</member><member name="M:TackLabeler.FrmExcelInsData.MenuFieldName_All_Click(System.Object,System.EventArgs)">
 	<summary>
- スタック行番号
+ 全フィールド名の出力
  </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
 	<remarks></remarks>
-</member><member name="T:TackLabeler.StackDataCollection">
+</member><member name="M:TackLabeler.FrmExcelInsData.TxtMasterWord_TextChanged(System.Object,System.EventArgs)">
 	<summary>
- エラースタックコレクション
+ Excelファイル名が変更されたらシートコンボボックスをクリアにする
  </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
 	<remarks></remarks>
-</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_Initial(FarPoint.Win.Spread.FpSpread)">
+</member><member name="M:TackLabeler.FrmExcelInsData.MenuClose_Click(System.Object,System.EventArgs)">
 	<summary>
- SPREADを初期化する
+ 閉じるメニュー
  </summary>
-	<param name="SSObj">作業するSPREADオブジェクト</param>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_Initial_BackColorWhite(FarPoint.Win.Spread.FpSpread)">
-	<summary>
- SPREADを初期化する
- </summary>
-	<param name="SSObj">作業するSPREADオブジェクト</param>
-	<remarks>偶数行、奇数行で背景色を変更しない（白固定）</remarks>
-</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_SerchSelectRow(FarPoint.Win.Spread.FpSpread,System.Int32[]@)">
-	<summary>
- 選択されている行を検索します(SelectionChangedイベントにて使用する事)
- </summary>
-	<param name="SSObj">対象SPREAD</param>
-	<param name="SelectRow">選択されている列</param>
-	<returns>選択されている行数</returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_SerchRow(FarPoint.Win.Spread.FpSpread,System.Int32,System.String,System.Int32[]@)">
-	<summary>
- 目的の文字をSPREADから探す
- </summary>
-	<param name="SSObj">対象SPREAD</param>
-	<param name="TargetCol">検索する列番号</param>
-	<param name="SerchText">検索する文字列</param>
-	<param name="TargetRows">合致する文字列がある行番号列</param>
-	<returns>発見した行番号数</returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_FitColWidth(FarPoint.Win.Spread.FpSpread,System.Int32[])">
-	<summary>
- SPREADの特定列を伸ばして画面にフィットさせる
- </summary>
-	<param name="SSObj"></param>
-	<param name="ResizeCol"></param>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_AddRow(FarPoint.Win.Spread.FpSpread)">
-	<summary>
- 新しい行を最下段に追加する
- </summary>
-	<param name="SSObj">対象SPREAD</param>
-	<returns>追加した行番号</returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_DoSelectRow(FarPoint.Win.Spread.FpSpread,System.Int32)">
-	<summary>
- 指定した行を選択状態にする
- </summary>
-	<param name="SSObj">対象SPREAD</param>
-	<param name="Row">対象行番号</param>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_SortIndicatorReset(FarPoint.Win.Spread.FpSpread)">
-	<summary>
- ソートインジケータのリセット
- </summary>
-	<param name="SSObj">対象SPREAD</param>
-	<remarks>Call SPREAD_SortIndicatorReset(SS)</remarks>
-</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_GetCellType(FarPoint.Win.Spread.FpSpread,System.Int32,System.Int32)">
-	<summary>
- 指定セルの型を判別する
- </summary>
-	<param name="SSObj">SPREAD</param>
-	<param name="Row">行番号</param>
-	<param name="Col">列番号</param>
-	<returns>enumSPREADCellType</returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD2CSV(FarPoint.Win.Spread.FpSpread,System.String,System.Boolean,System.Int32[])">
-	<summary>
- SPREAD内データをCSVファイルに出力する
- </summary>
-	<param name="SPREADObj">対象SPREADオブジェクト</param>
-	<param name="DefaltFileName">規定のファイル名</param>
-	<param name="WithHeader">ヘッダを出力（TRUE:出力する）</param>
-	<returns>出力したファイルフルパス</returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD2CSV_Part(FarPoint.Win.Spread.FpSpread,System.String,System.Boolean,System.Int32[])">
-	<summary>
- チェックされたデータのみを出力する
- </summary>
-	<param name="SPREADObj"></param>
-	<param name="DefaltFileName"></param>
-	<param name="WithHeader"></param>
-	<param name="SkipCol"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD2Excel(FarPoint.Win.Spread.FpSpread,System.String)">
-	<summary>
- SPREADデータをExcel形式で保存する
- </summary>
-	<param name="SPREADObj"></param>
-	<param name="DefaltFileName"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModuleNSPREAD.SPREADClearFunctionKey(FarPoint.Win.Spread.FpSpread)">
-	<summary>
- SPREADに設定されているファンクションキーを無効にします
- </summary>
-	<param name="SPREADObj"></param>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_ResetSortIndicator(FarPoint.Win.Spread.FpSpread)">
-	<summary>
- ソートインジケータのリセット
- </summary>
-	<param name="SPREADObj"></param>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModADO.SQLEncode(System.String)">
-	<summary>
- 指定した文字をBASE64形式に変換する
- </summary>
-	<param name="Value">変換元文字列</param>
-	<returns>変換後(BASE64)文字列</returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModADO.SQLDecode(System.String)">
-	<summary>
- BASE64に変換された文字列を復号する
- </summary>
-	<param name="ValueBASE64">変換元BASE64文字列</param>
-	<returns>復号文字列</returns>
+	<param name="sender"></param>
+	<param name="e"></param>
 	<remarks></remarks>
 </member><member name="P:TackLabeler.ClassFormControl.TargetForm">
 	<summary>
@@ -308,758 +159,6 @@ TackLabeler
  フォーム内容が変更されたかどうか確認クラス
  </summary>
 	<remarks></remarks>
-</member><member name="F:TackLabeler.ModulePaperData.PaperArrayFile">
-	<summary>
- ユーザ作成用紙ファイル名
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ModulePaperData.PaperArray">
-	<summary>
- 用紙情報内部ジェネリックコレクション
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ModulePaperData.ReportFileMaster">
-	<summary>
- ＲＰＸファイル生成用マスターファイル
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ModulePaperData.ReportRPXFile">
-	<summary>
- 生成ＲＰＸファイル名
- </summary>
-	<remarks></remarks>
-Public ReportRPXFile As String = AppFullPath("RepTackFile.rpx")
-
-</member><member name="M:TackLabeler.ModulePaperData.CreateReport(TackLabeler.ClassPaperCollection)">
-	<summary>
- ＲＰＸファイル（ActiveReportフォーマットファイル）の作成
- </summary>
-	<param name="Dat">出力用紙情報コレクション</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModulePaperData.CreateLayOut(TackLabeler.ClassPaperCollection)">
-	<summary>
- レイアウト部分の生成
- </summary>
-	<param name="Dat"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModulePaperData.CreateSection(TackLabeler.ClassPaperCollection)">
-	<summary>
- セクション部分の生成
- </summary>
-	<param name="Dat"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModulePaperData.CreateField(TackLabeler.ClassPaperCollection)">
-	<summary>
- フィールド部分の生成
- </summary>
-	<param name="Dat"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModulePaperData.CreateStyle(TackLabeler.ClassFieldCollection)">
-	<summary>
- スタイル部分の生成
- </summary>
-	<param name="Dat"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModulePaperData.CreatePageSetting(TackLabeler.ClassPaperCollection)">
-	<summary>
- 用紙設定部分の生成
- </summary>
-	<param name="Dat"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModulePaperData.LoadPaperArray">
-	<summary>
- 用紙情報読込
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModulePaperData.SavePaperArray">
-	<summary>
- 用紙情報書き込み
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModulePaperData.RPX2MM(System.String,TackLabeler.ModulePaperData.enumCalcType)">
-	<summary>
- 用紙単位数字をｍｍ単位に変換
- </summary>
-	<param name="value"></param>
-	<param name="CalcType"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ModulePaperData.MM2RPX(System.Decimal,TackLabeler.ModulePaperData.enumCalcType)">
-	<summary>
- ｍｍ単位数字を用紙単位数字に変換
- </summary>
-	<param name="value"></param>
-	<param name="CalcType"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassStyleCollection.font_family">
-	<summary>
- フォント名
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassStyleCollection.font_size">
-	<summary>
- フォントサイズ
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassStyleCollection.font_weight">
-	<summary>
- ボールド
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassStyleCollection.white_space">
-	<summary>
-	</summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassStyleCollection.text_align">
-	<summary>
- 文字横配置
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassStyleCollection.vertical_align">
-	<summary>
- 文字縦配置
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassStyleCollection.ddo_font_vertical">
-	<summary>
- 縦書き（noneで固定）
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassStyleCollection.ddo_char_set">
-	<summary>
- キャラクタ（１２８（日本語）で固定）
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassStyleCollection.text_justify">
-	<summary>
-	</summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassStyleCollection.ddo_shrink_to_fit">
-	<summary>
-	</summary>
-	<remarks></remarks>
-</member><member name="T:TackLabeler.ClassStyleCollection">
-	<summary>
- フィールドスタイルコレクション
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.FieldType">
-	<summary>
- フィールドタイプ
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.ARType">
-	<summary>
- ARのオブジェクト名
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.IsSystem">
-	<summary>
- システムフィールド（TRUE：システム用）
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.Text">
-	<summary>
- 表示文字
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.AddStr1">
-	<summary>
- 〒文字を付加
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.Name">
-	<summary>
- フィールド名
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.DataField">
-	<summary>
- データフィールド名
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.Visible">
-	<summary>
- 表示
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.MultiLine">
-	<summary>
- 複数行
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.FieldUseType">
-	<summary>
- フィールド使用用途
- </summary>
-	<remarks>
-一般フィールド0
-郵便番号フィールド1
-住所フィールド2
-名前フィールド3
-注意書きフィールド4
-</remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.Left">
-	<summary>
- 左位置
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.Top">
-	<summary>
- 上位置
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.Width">
-	<summary>
- フィールド幅
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.Height">
-	<summary>
- フィールド高さ
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.CanShrink">
-	<summary>
- フィールド高さ自動縮小
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.BackColor">
-	<summary>
- 背景色（固定）
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.LineColor">
-	<summary>
- ライン色（SHAPEのみ）固定
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.LineStyle">
-	<summary>
- ライン種類（SHAPEのみ）固定
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.RoundingRadius">
-	<summary>
-	</summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.Style">
-	<summary>
- フィールドスタイル
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.LineWidth">
-	<summary>
- ライン幅(SHAPEのみ）
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.LabelText">
-	<summary>
- ラベルフィールド表示文字
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.LabelIsMask">
-	<summary>
- ラベル文字がマスク文字？？
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.DisplayWidth">
-	<summary>
- 入力表幅
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.Angle">
-	<summary>
- 文字表示角度（度）
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.BarcodeCaption">
-	<summary>
- バーコード文字付帯
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.ColorReverse">
-	<summary>
- 白黒反転
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.UseIME">
-	<summary>
- 漢字入力
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.AddString_Front">
-	<summary>
- フィールドの前に付ける文字
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassFieldCollection.AddString_Back">
-	<summary>
- フィールドの後ろに付ける文字
- </summary>
-	<remarks></remarks>
-</member><member name="T:TackLabeler.ClassFieldCollection">
-	<summary>
- フィールド情報コレクション
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassSectionCollection.Type">
-	<summary>
- ARオブジェクト名（固定）
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassSectionCollection.Name">
-	<summary>
- ARオブジェクトタイプ名(固定）
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassSectionCollection.Height">
-	<summary>
- セクション高さ
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassSectionCollection.ColumnCount">
-	<summary>
- 列数
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassSectionCollection.RowCount">
-	<summary>
- 行数
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassSectionCollection.ColumnDirection">
-	<summary>
- 印字順序（１：横→下）
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassSectionCollection.ColumnSpacing">
-	<summary>
- 列間隔
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassSectionCollection.RowSpacing">
-	<summary>
- 行間隔
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassSectionCollection.BackColor">
-	<summary>
- 背景色（固定）
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassSectionCollection.KeepTogether">
-	<summary>
- キープトゥギャザ（固定）
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassSectionCollection.FieldData">
-	<summary>
- 保有フィールドデータアレイ
- </summary>
-	<remarks></remarks>
-</member><member name="T:TackLabeler.ClassSectionCollection">
-	<summary>
- セクション項目コレクション
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassLayoutCollection.Version">
-	<summary>
- バージョン（固定）
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassLayoutCollection.PrintWidth">
-	<summary>
- 印字幅（用紙幅－左右余白）
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassLayoutCollection.DocumentName">
-	<summary>
- ドキュメント名（固定）
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassLayoutCollection.ScriptLang">
-	<summary>
- スクリプト言語（固定）
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassLayoutCollection.UserData">
-	<summary>
-	</summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassLayoutCollection.MasterReport">
-	<summary>
- マスタレポート使用？（固定）
- </summary>
-	<remarks></remarks>
-</member><member name="T:TackLabeler.ClassLayoutCollection">
-	<summary>
- レイアウト項目コレクション
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassPaperCollection.MakerName">
-	<summary>
- 用紙メーカー名
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassPaperCollection.Name">
-	<summary>
- 用紙名
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassPaperCollection.Text">
-	<summary>
- 用紙表示名
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassPaperCollection.Caption">
-	<summary>
- 用紙備考
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassPaperCollection.PaperSize">
-	<summary>
- 用紙サイズ
- </summary>
-	<remarks>
-  https://support.hos.co.jp/support/CR/reference/Manual/V10/ViewControl/property/CrPrinter/PaperSize.html
- 8	A3シート	297 × 420mm
- 9	A4シート	210 × 297mm
- 11	A5シート	148 × 210mm
- 43	はがき		100 × 148mm
-</remarks>
-</member><member name="F:TackLabeler.ClassPaperCollection.LeftMargin">
-	<summary>
- 左余白
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassPaperCollection.RightMargin">
-	<summary>
- 右余白
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassPaperCollection.TopMargin">
-	<summary>
- 上余白
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassPaperCollection.BottomMargin">
-	<summary>
- 下余白
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassPaperCollection.PaperWidth">
-	<summary>
- 用紙幅
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassPaperCollection.PaperHeight">
-	<summary>
- 用紙高さ
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassPaperCollection.PaperName">
-	<summary>
- 用紙名（なしで固定）
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassPaperCollection.Orientation">
-	<summary>
- 用紙向き（１：縦）
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassPaperCollection.GroundPicture">
-	<summary>
- 用紙画像
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassPaperCollection.PaperID">
-	<summary>
- 用紙GUID
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassPaperCollection.Layout">
-	<summary>
- レイアウトコレクション
- </summary>
-	<remarks></remarks>
-</member><member name="F:TackLabeler.ClassPaperCollection.Section">
-	<summary>
- セクションコレクション
- </summary>
-	<remarks></remarks>
-</member><member name="T:TackLabeler.ClassPaperCollection">
-	<summary>
- 用紙情報コレクション
- </summary>
-	<remarks></remarks>
-</member><member name="T:TackLabeler.ClassPreviewFieldCollection">
-	<summary>
- 印刷プレビュー作成用コレクション
- </summary>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.SheetCount(NPOI.SS.UserModel.IWorkbook)">
-	<summary>
- ブックのシート数
- </summary>
-	<param name="Book">対象ブック</param>
-	<returns>シート数</returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.FindSheet(NPOI.SS.UserModel.IWorkbook,System.String)">
-	<summary>
- シートを探す
- </summary>
-	<param name="Book">対象ブック</param>
-	<param name="SheetName">検索シート名</param>
-	<returns>-1：対象シートなし　0以上：見つかったシートインデックス</returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.SheetList(NPOI.SS.UserModel.IWorkbook)">
-	<summary>
- シート名一覧
- </summary>
-	<param name="Book">対象ブック</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.SelectSheet(NPOI.SS.UserModel.IWorkbook,System.Int32)">
-	<summary>
- シートの選択
- </summary>
-	<param name="Book">対象ブック</param>
-	<param name="SheetIndex">シートインデックス</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.SelectSheet(NPOI.SS.UserModel.IWorkbook,System.String)">
-	<summary>
- シートの選択
- </summary>
-	<param name="Book">対象ブック</param>
-	<param name="SheetName">選択シート名</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.ClearCell(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32)">
-	<summary>
- セルのクリア
- </summary>
-	<param name="Obj">対象シート</param>
-	<param name="Row">行番号</param>
-	<param name="Col">列番号</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.SetValueEX(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32,System.Object)">
-	<summary>
- セルに値を設定する（拡張）
- </summary>
-	<param name="Obj">対象シート</param>
-	<param name="Row">行番号(0始まり)</param>
-	<param name="Col">列番号(0始まり)</param>
-	<param name="Value">設定値</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.SetValueEX(NPOI.SS.UserModel.ISheet,System.String,System.Object)">
-	<summary>
- セルに値を設定する（拡張）
- </summary>
-	<param name="Obj">対象シート</param>
-	<param name="A1">セル番号</param>
-	<param name="Value">設定値</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.SetValue(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32,System.String)">
-	<summary>
- セルに値を設定する
- </summary>
-	<param name="Obj">対象シート</param>
-	<param name="Row">行番号</param>
-	<param name="Col">列番号</param>
-	<param name="Value">設定値（String）</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.SetValue(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32,System.Int32)">
-	<summary>
- セルに値を設定する
- </summary>
-	<param name="Obj">対象シート</param>
-	<param name="Row">行番号</param>
-	<param name="Col">列番号</param>
-	<param name="Value">設定値（Integer）</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.SetValue(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32,System.Decimal)">
-	<summary>
- セルに値を設定する
- </summary>
-	<param name="Obj">対象シート</param>
-	<param name="Row">行番号</param>
-	<param name="Col">列番号</param>
-	<param name="Value">設定値（Decimal）</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.SetValue(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32,System.DateTime)">
-	<summary>
- セルに値を設定する
- </summary>
-	<param name="Obj">対象シート</param>
-	<param name="Row">行番号</param>
-	<param name="Col">列番号</param>
-	<param name="Value">設定値（Date）</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.GetValue(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32)">
-	<summary>
- セルの値を読み込む
- </summary>
-	<param name="Obj">対象シート</param>
-	<param name="Row">行番号(0始まり)</param>
-	<param name="Col">列番号(0始まり)</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.GetValue(NPOI.SS.UserModel.ISheet,System.String)">
-	<summary>
- セルの値を読み込む
- </summary>
-	<param name="Obj">対象シート</param>
-	<param name="A1">セル番号（例：A1）</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.SearchText(NPOI.SS.UserModel.ISheet,System.String)">
-	<summary>
- 特定シートから文字を探す
- </summary>
-	<param name="Obj">対象シート</param>
-	<param name="TargetTxet">検索文字</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.InsertRow(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32)">
-	<summary>
- 行の挿入
- </summary>
-	<param name="Sheet">対象シート</param>
-	<param name="StartRow">行挿入位置(0始まり)</param>
-	<param name="RowCount">挿入行数（省略：1行）</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.RemoveRow(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32)">
-	<summary>
- 行の削除
- </summary>
-	<param name="Sheet">対象シート</param>
-	<param name="DelStartRow">削除開始行</param>
-	<param name="RowCount">削除行数（省略：1行）</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.AddSheet(NPOI.SS.UserModel.IWorkbook,System.String)">
-	<summary>
- シートの追加
- </summary>
-	<param name="Book">対象ブック</param>
-	<param name="SheetName">設定シート名</param>
-	<returns></returns>
-	<remarks>シート名を指定しない場合は「Sheet1」などのデフォルト名になる</remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.EditSheetName(NPOI.SS.UserModel.IWorkbook,System.String,System.String)">
-	<summary>
- シート名変更
- </summary>
-	<param name="Book">対象ブック</param>
-	<param name="OldSheetName">変更前シート名</param>
-	<param name="NewSheetName">変更後シート名</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.EditSheetName(NPOI.SS.UserModel.IWorkbook,System.Int32,System.String)">
-	<summary>
- シート名変更
- </summary>
-	<param name="Book">対象ブック</param>
-	<param name="SheetIndex">変更シートインデックス</param>
-	<param name="NewSheetName">変更後シート名</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.RemoveSheet(NPOI.SS.UserModel.IWorkbook,System.String)">
-	<summary>
- シートの削除
- </summary>
-	<param name="Book">対象ブック</param>
-	<param name="SheetName">削除シート名</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.RemoveSheet(NPOI.SS.UserModel.IWorkbook,System.Int32)">
-	<summary>
- シートの削除
- </summary>
-	<param name="Book">対象ブック</param>
-	<param name="SheetIndex">削除シートインデックス</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.SheetActive(NPOI.SS.UserModel.IWorkbook,System.String)">
-	<summary>
- アクティブシートの選択
- </summary>
-	<param name="Book">対象ブック</param>
-	<param name="SheetName">対象シート名</param>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.SheetActive(NPOI.SS.UserModel.IWorkbook,System.Int32)">
-	<summary>
- アクティブシートの選択
- </summary>
-	<param name="Book">対象ブック</param>
-	<param name="SheetIndex">対象シートインデックス名</param>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.SheetSetPrintAria(NPOI.SS.UserModel.IWorkbook,System.String,System.String)">
-	<summary>
- 印刷範囲の設定
- </summary>
-	<param name="Book">対象ブック</param>
-	<param name="SheetName">対象シート名</param>
-	<param name="Aria">印刷範囲(例：$A$1:$P$50)</param>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.SheetSetPrintFitMode(NPOI.SS.UserModel.IWorkbook,System.String,TackLabeler.ClassExcelWork.enumPrintFitMode)">
-	<summary>
- 印刷フィット指定
- </summary>
-	<param name="Book"></param>
-	<param name="SheetName"></param>
-	<param name="FitMode"></param>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.SaveExcelFile(System.String,NPOI.SS.UserModel.IWorkbook)">
-	<summary>
- 保存
- </summary>
-	<param name="FilePath">保存ファイルパス＆ファイル名</param>
-	<param name="Book">対象ブック名</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.OpenExcelFile(System.String)">
-	<summary>
- エクセルファイルを読み込む
- </summary>
-	<param name="filePath"></param>
-	<returns></returns>
-	<remarks>
-  Dim book As IWorkbook = EX.OpenExcelFile(FileName)
- </remarks>
-</member><member name="M:TackLabeler.ClassExcelWork.CreateExcelFile(System.String)">
-	<summary>
- 新規Excelファイルを作成する
- </summary>
-	<param name="filePath"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="T:TackLabeler.ClassExcelWork">
-	<summary>
- Excel操作クラス(NPOI版)
- </summary>
-	<remarks>
- https://www.nuget.org/packages/NPOI/ を開いて、右上のInfoの中にある「Download package」を開き
- ダウンロードしたファイルの拡張子をZIPに変更して解凍する
- </remarks>
 </member><member name="M:TackLabeler.PaperInfo.LoadPaperInfoArray">
 	<summary>
  用紙情報読込
@@ -1079,6 +178,36 @@ Public ReportRPXFile As String = AppFullPath("RepTackFile.rpx")
 	<param name="PaperID"></param>
 	<returns></returns>
 	<remarks></remarks>
+</member><member name="M:TackLabeler.ModuleStringReplace.StringReplace(System.String,System.String,System.String,System.Int32,System.Globalization.CompareInfo,System.Globalization.CompareOptions)">
+	<summary>
+ 指定した文字列内の指定した文字列を別の文字列に置換する。
+ </summary>
+	<param name="input">置換する文字列のある文字列。</param>
+	<param name="oldValue">検索文字列。</param>
+	<param name="newValue">置換文字列。</param>
+	<param name="count">置換する回数。負の数が指定されたときは、すべて置換する。</param>
+	<param name="compInfo">文字列の検索に使用するCompareInfo。</param>
+	<param name="compOptions">文字列の検索に使用するCompareOptions。</param>
+	<returns>置換された結果の文字列。</returns>
+</member><member name="M:TackLabeler.ModuleStringReplace.StringReplace(System.String,System.String,System.String,System.Int32,System.Boolean)">
+	<summary>
+ 指定した文字列内の指定した文字列を別の文字列に置換する。
+ </summary>
+	<param name="input">置換する文字列のある文字列。</param>
+	<param name="oldValue">検索文字列。</param>
+	<param name="newValue">置換文字列。</param>
+	<param name="count">置換する回数。負の数が指定されたときは、すべて置換する。</param>
+	<param name="ignoreCase">大文字と小文字を区別しない時はTrue。</param>
+	<returns>置換された結果の文字列。</returns>
+</member><member name="M:TackLabeler.ModuleStringReplace.StringReplace(System.String,System.String,System.String,System.Int32)">
+	<summary>
+ 指定した文字列内の指定した文字列を別の文字列に置換する。
+ </summary>
+	<param name="input">置換する文字列のある文字列。</param>
+	<param name="oldValue">検索文字列。</param>
+	<param name="newValue">置換文字列。</param>
+	<param name="count">置換する回数。負の数が指定されたときは、すべて置換する。</param>
+	<returns>置換された結果の文字列。</returns>
 </member><member name="M:TackLabeler.FrmMain.LoadTab">
 	<summary>
  タブ情報読込
@@ -1773,6 +902,17 @@ Public ReportRPXFile As String = AppFullPath("RepTackFile.rpx")
  敬称
  </summary>
 	<remarks></remarks>
+</member><member name="M:TackLabeler.ModuleExcel.CreateExcel2Excel(System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.String,System.String)">
+	<summary>
+ 既存EXCEL文書を編集し別名ファイルにする
+ </summary>
+	<param name="Field"></param>
+	<param name="Data"></param>
+	<param name="MasterDoc"></param>
+	<param name="SaveFileName"></param>
+	<param name="SheetName"></param>
+	<returns></returns>
+	<remarks></remarks>
 </member><member name="M:TackLabeler.ModuleFrmSelTack.FindControlByFieldName(System.Windows.Forms.Form,System.String)">
 	<summary>
  フォームに配置されているコントロールを名前で探す
@@ -1790,6 +930,37 @@ Public ReportRPXFile As String = AppFullPath("RepTackFile.rpx")
 	<param name="Row"></param>
 	<param name="Index"></param>
 	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModuleWord.CreateWord2PDF(System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.String)">
+	<summary>
+ 既存WORD文書を編集しPDFファイルにする
+ </summary>
+	<param name="Data"></param>
+	<param name="MasterDoc"></param>
+	<param name="SaveFileName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModuleWord.CreateWord2Word(System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.String)">
+	<summary>
+ 既存WORD文書を編集し別名ファイルにする
+ </summary>
+	<param name="Data"></param>
+	<param name="MasterDoc"></param>
+	<param name="SaveFileName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModuleWord.SelectionFind(Microsoft.Office.Interop.Word.Document,System.String,System.String)">
+	<summary>
+ 所定文字列を置き換える
+ </summary>
+	<param name="document">対象DOCUMENTオブジェクト</param>
+	<param name="MasterText">置き換え対象文字列</param>
+	<param name="RepText">置き換える文字列</param>
+	<remarks></remarks>
+</member><member name="T:TackLabeler.ModuleWord">
+	<summary>
+ WORD操作モジュール
+ </summary>
 	<remarks></remarks>
 </member><member name="P:TackLabeler.UserControlTextAlignment2.IsHorizon">
 	<summary>
@@ -2334,6 +1505,1078 @@ Public ReportRPXFile As String = AppFullPath("RepTackFile.rpx")
 	<summary>
   ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
 </summary>
+</member><member name="M:TackLabeler.Module1.NFuncSystemFullPath(System.Environment.SpecialFolder,System.String)">
+	<summary>
+ 特殊フォルダパスを検索する
+ </summary>
+	<param name="TargetFolder">対象となる特殊フォルダ</param>
+	<param name="FileName">ファイル名</param>
+	<returns>ファイル名を含むフルパス</returns>
+	<remarks>ファイル名指定時
+ ファイル名指定時はファイル名を含むフルパスを返します。(特殊フォルダ名＋固定フォルダ名＋ファイル名)またその特殊フォルダが無い場合は自動的に作成されます。
+ ファイル名が未指定の場合は特殊フォルダのパスを返します。(特殊フォルダ名＋固定フォルダ）但しこのフォルダの自動作成は行われません
+ 　　また、特殊フォルダ自体が存在しない場合は””が帰ります。
+ </remarks>
+</member><member name="M:TackLabeler.Module1.CsvToArrayList2(System.String)">
+	<summary>
+ CSVをArrayListに変換
+ </summary>
+	<param name="csvText">CSVの内容が入ったString</param>
+	<returns>変換結果のArrayList</returns>
+</member><member name="M:TackLabeler.Module1.LicenseCheck(System.String)">
+	<summary>
+ ライセンスコードの確認
+ </summary>
+	<param name="Code">確認するライセンス文字列</param>
+	<returns>True:ライセンスOK</returns>
+	<remarks>
+ ライセンスコード内容：［PC名］|［TACKLABELER.EXE(固定値)］|［コード生成タイムスタンプ］
+ </remarks>
+</member><member name="M:TackLabeler.Module1.CountChar(System.String,System.Char)">
+	<summary>
+ 特定文字数を数える
+ </summary>
+	<param name="s"></param>
+	<param name="c"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.Module1.CreateGUID">
+	<summary>
+ GUIDを作成する
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:TackLabeler.FrmWordInsData.SelectTabIndex">
+	<summary>
+ 選択タブインデックス
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmWordInsData.FrmWordInsData_Load(System.Object,System.EventArgs)">
+	<summary>
+ フォームロード
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmWordInsData.TxtMasterWord_DragDrop(System.Object,System.Windows.Forms.DragEventArgs)">
+	<summary>
+ WORD文書がドロップされた
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmWordInsData.TxtOutputFolder_DragDrop(System.Object,System.Windows.Forms.DragEventArgs)">
+	<summary>
+ 出力先フォルダがドロップされた
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmWordInsData.ConcatPath(System.String,System.String)">
+	<summary>
+ パスとファイル名を結合する
+ </summary>
+	<param name="DirName"></param>
+	<param name="FileName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmWordInsData.BtnSelFolder_Click(System.Object,System.EventArgs)">
+	<summary>
+ 出力先選択ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmWordInsData.LinkLabel1_LinkClicked(System.Object,System.Windows.Forms.LinkLabelLinkClickedEventArgs)">
+	<summary>
+ 元WORD文書を開く
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmWordInsData.LinkLabel2_LinkClicked(System.Object,System.Windows.Forms.LinkLabelLinkClickedEventArgs)">
+	<summary>
+ 出力先フォルダを開く
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmWordInsData.BtnSelWord_Click(System.Object,System.EventArgs)">
+	<summary>
+ WORD文書選択ボタン
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmWordInsData.DataGridView1_CellContentClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ 出力名選択チェックボックス
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmWordInsData.ScreenChange(System.Boolean)">
+	<summary>
+ 画面の切替
+ </summary>
+	<param name="Value"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmWordInsData.MenuExecute_Click(System.Object,System.EventArgs)">
+	<summary>
+ 実行メニュー
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmWordInsData.MenuCancel_Click(System.Object,System.EventArgs)">
+	<summary>
+ キャンセルメニュー
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmWordInsData.DataGridView1_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ コンテキストメニューの表示
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmWordInsData.MenuFieldName_Click(System.Object,System.EventArgs)">
+	<summary>
+ 単一フィールド名の取得
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmWordInsData.MenuFieldName_All_Click(System.Object,System.EventArgs)">
+	<summary>
+ 全フィールド名の出力
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmWordInsData.MenuClose_Click(System.Object,System.EventArgs)">
+	<summary>
+ 閉じるメニュー
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.Module2.GetStack(System.Exception)">
+	<summary>
+ エラースタックの取得
+ </summary>
+	<param name="exd">エラーException</param>
+	<returns>エラー発生状況のStackDataCollection</returns>
+	<remarks>
+ 使用例：MsgBox( String.Format("Location:[{0}]-[{1}](Line:{2})", ST.ClassName, ST.MetodName, ST.LineNo))
+ </remarks>
+</member><member name="M:TackLabeler.Module2.ExMessCreater(TackLabeler.StackDataCollection,System.String)">
+	<summary>
+ スタック付きメッセージの作成
+ </summary>
+	<param name="ST"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.StackDataCollection.Message">
+	<summary>
+ エラーメッセージ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.StackDataCollection.ClassName">
+	<summary>
+ スタッククラス名
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.StackDataCollection.MetodName">
+	<summary>
+ スタックメソッド名
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.StackDataCollection.LineNo">
+	<summary>
+ スタック行番号
+ </summary>
+	<remarks></remarks>
+</member><member name="T:TackLabeler.StackDataCollection">
+	<summary>
+ エラースタックコレクション
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ModulePaperData.PaperArrayFile">
+	<summary>
+ ユーザ作成用紙ファイル名
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ModulePaperData.PaperArray">
+	<summary>
+ 用紙情報内部ジェネリックコレクション
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ModulePaperData.ReportFileMaster">
+	<summary>
+ ＲＰＸファイル生成用マスターファイル
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ModulePaperData.ReportRPXFile">
+	<summary>
+ 生成ＲＰＸファイル名
+ </summary>
+	<remarks></remarks>
+Public ReportRPXFile As String = AppFullPath("RepTackFile.rpx")
+
+</member><member name="M:TackLabeler.ModulePaperData.CreateReport(TackLabeler.ClassPaperCollection)">
+	<summary>
+ ＲＰＸファイル（ActiveReportフォーマットファイル）の作成
+ </summary>
+	<param name="Dat">出力用紙情報コレクション</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModulePaperData.CreateLayOut(TackLabeler.ClassPaperCollection)">
+	<summary>
+ レイアウト部分の生成
+ </summary>
+	<param name="Dat"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModulePaperData.CreateSection(TackLabeler.ClassPaperCollection)">
+	<summary>
+ セクション部分の生成
+ </summary>
+	<param name="Dat"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModulePaperData.CreateField(TackLabeler.ClassPaperCollection)">
+	<summary>
+ フィールド部分の生成
+ </summary>
+	<param name="Dat"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModulePaperData.CreateStyle(TackLabeler.ClassFieldCollection)">
+	<summary>
+ スタイル部分の生成
+ </summary>
+	<param name="Dat"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModulePaperData.CreatePageSetting(TackLabeler.ClassPaperCollection)">
+	<summary>
+ 用紙設定部分の生成
+ </summary>
+	<param name="Dat"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModulePaperData.LoadPaperArray">
+	<summary>
+ 用紙情報読込
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModulePaperData.SavePaperArray">
+	<summary>
+ 用紙情報書き込み
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModulePaperData.RPX2MM(System.String,TackLabeler.ModulePaperData.enumCalcType)">
+	<summary>
+ 用紙単位数字をｍｍ単位に変換
+ </summary>
+	<param name="value"></param>
+	<param name="CalcType"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModulePaperData.MM2RPX(System.Decimal,TackLabeler.ModulePaperData.enumCalcType)">
+	<summary>
+ ｍｍ単位数字を用紙単位数字に変換
+ </summary>
+	<param name="value"></param>
+	<param name="CalcType"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassStyleCollection.font_family">
+	<summary>
+ フォント名
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassStyleCollection.font_size">
+	<summary>
+ フォントサイズ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassStyleCollection.font_weight">
+	<summary>
+ ボールド
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassStyleCollection.white_space">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassStyleCollection.text_align">
+	<summary>
+ 文字横配置
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassStyleCollection.vertical_align">
+	<summary>
+ 文字縦配置
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassStyleCollection.ddo_font_vertical">
+	<summary>
+ 縦書き（noneで固定）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassStyleCollection.ddo_char_set">
+	<summary>
+ キャラクタ（１２８（日本語）で固定）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassStyleCollection.text_justify">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassStyleCollection.ddo_shrink_to_fit">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:TackLabeler.ClassStyleCollection">
+	<summary>
+ フィールドスタイルコレクション
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.FieldType">
+	<summary>
+ フィールドタイプ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.ARType">
+	<summary>
+ ARのオブジェクト名
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.IsSystem">
+	<summary>
+ システムフィールド（TRUE：システム用）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.Text">
+	<summary>
+ 表示文字
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.AddStr1">
+	<summary>
+ 〒文字を付加
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.Name">
+	<summary>
+ フィールド名
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.DataField">
+	<summary>
+ データフィールド名
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.Visible">
+	<summary>
+ 表示
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.MultiLine">
+	<summary>
+ 複数行
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.FieldUseType">
+	<summary>
+ フィールド使用用途
+ </summary>
+	<remarks>
+一般フィールド0
+郵便番号フィールド1
+住所フィールド2
+名前フィールド3
+注意書きフィールド4
+</remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.Left">
+	<summary>
+ 左位置
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.Top">
+	<summary>
+ 上位置
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.Width">
+	<summary>
+ フィールド幅
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.Height">
+	<summary>
+ フィールド高さ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.CanShrink">
+	<summary>
+ フィールド高さ自動縮小
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.BackColor">
+	<summary>
+ 背景色（固定）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.LineColor">
+	<summary>
+ ライン色（SHAPEのみ）固定
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.LineStyle">
+	<summary>
+ ライン種類（SHAPEのみ）固定
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.RoundingRadius">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.Style">
+	<summary>
+ フィールドスタイル
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.LineWidth">
+	<summary>
+ ライン幅(SHAPEのみ）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.LabelText">
+	<summary>
+ ラベルフィールド表示文字
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.LabelIsMask">
+	<summary>
+ ラベル文字がマスク文字？？
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.DisplayWidth">
+	<summary>
+ 入力表幅
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.Angle">
+	<summary>
+ 文字表示角度（度）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.BarcodeCaption">
+	<summary>
+ バーコード文字付帯
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.ColorReverse">
+	<summary>
+ 白黒反転
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.UseIME">
+	<summary>
+ 漢字入力
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.AddString_Front">
+	<summary>
+ フィールドの前に付ける文字
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassFieldCollection.AddString_Back">
+	<summary>
+ フィールドの後ろに付ける文字
+ </summary>
+	<remarks></remarks>
+</member><member name="T:TackLabeler.ClassFieldCollection">
+	<summary>
+ フィールド情報コレクション
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassSectionCollection.Type">
+	<summary>
+ ARオブジェクト名（固定）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassSectionCollection.Name">
+	<summary>
+ ARオブジェクトタイプ名(固定）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassSectionCollection.Height">
+	<summary>
+ セクション高さ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassSectionCollection.ColumnCount">
+	<summary>
+ 列数
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassSectionCollection.RowCount">
+	<summary>
+ 行数
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassSectionCollection.ColumnDirection">
+	<summary>
+ 印字順序（１：横→下）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassSectionCollection.ColumnSpacing">
+	<summary>
+ 列間隔
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassSectionCollection.RowSpacing">
+	<summary>
+ 行間隔
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassSectionCollection.BackColor">
+	<summary>
+ 背景色（固定）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassSectionCollection.KeepTogether">
+	<summary>
+ キープトゥギャザ（固定）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassSectionCollection.FieldData">
+	<summary>
+ 保有フィールドデータアレイ
+ </summary>
+	<remarks></remarks>
+</member><member name="T:TackLabeler.ClassSectionCollection">
+	<summary>
+ セクション項目コレクション
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassLayoutCollection.Version">
+	<summary>
+ バージョン（固定）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassLayoutCollection.PrintWidth">
+	<summary>
+ 印字幅（用紙幅－左右余白）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassLayoutCollection.DocumentName">
+	<summary>
+ ドキュメント名（固定）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassLayoutCollection.ScriptLang">
+	<summary>
+ スクリプト言語（固定）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassLayoutCollection.UserData">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassLayoutCollection.MasterReport">
+	<summary>
+ マスタレポート使用？（固定）
+ </summary>
+	<remarks></remarks>
+</member><member name="T:TackLabeler.ClassLayoutCollection">
+	<summary>
+ レイアウト項目コレクション
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassPaperCollection.MakerName">
+	<summary>
+ 用紙メーカー名
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassPaperCollection.Name">
+	<summary>
+ 用紙名
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassPaperCollection.Text">
+	<summary>
+ 用紙表示名
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassPaperCollection.Caption">
+	<summary>
+ 用紙備考
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassPaperCollection.PaperSize">
+	<summary>
+ 用紙サイズ
+ </summary>
+	<remarks>
+  https://support.hos.co.jp/support/CR/reference/Manual/V10/ViewControl/property/CrPrinter/PaperSize.html
+ 8	A3シート	297 × 420mm
+ 9	A4シート	210 × 297mm
+ 11	A5シート	148 × 210mm
+ 43	はがき		100 × 148mm
+</remarks>
+</member><member name="F:TackLabeler.ClassPaperCollection.LeftMargin">
+	<summary>
+ 左余白
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassPaperCollection.RightMargin">
+	<summary>
+ 右余白
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassPaperCollection.TopMargin">
+	<summary>
+ 上余白
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassPaperCollection.BottomMargin">
+	<summary>
+ 下余白
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassPaperCollection.PaperWidth">
+	<summary>
+ 用紙幅
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassPaperCollection.PaperHeight">
+	<summary>
+ 用紙高さ
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassPaperCollection.PaperName">
+	<summary>
+ 用紙名（なしで固定）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassPaperCollection.Orientation">
+	<summary>
+ 用紙向き（１：縦）
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassPaperCollection.GroundPicture">
+	<summary>
+ 用紙画像
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassPaperCollection.PaperID">
+	<summary>
+ 用紙GUID
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassPaperCollection.Layout">
+	<summary>
+ レイアウトコレクション
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TackLabeler.ClassPaperCollection.Section">
+	<summary>
+ セクションコレクション
+ </summary>
+	<remarks></remarks>
+</member><member name="T:TackLabeler.ClassPaperCollection">
+	<summary>
+ 用紙情報コレクション
+ </summary>
+	<remarks></remarks>
+</member><member name="T:TackLabeler.ClassPreviewFieldCollection">
+	<summary>
+ 印刷プレビュー作成用コレクション
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_Initial(FarPoint.Win.Spread.FpSpread)">
+	<summary>
+ SPREADを初期化する
+ </summary>
+	<param name="SSObj">作業するSPREADオブジェクト</param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_Initial_BackColorWhite(FarPoint.Win.Spread.FpSpread)">
+	<summary>
+ SPREADを初期化する
+ </summary>
+	<param name="SSObj">作業するSPREADオブジェクト</param>
+	<remarks>偶数行、奇数行で背景色を変更しない（白固定）</remarks>
+</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_SerchSelectRow(FarPoint.Win.Spread.FpSpread,System.Int32[]@)">
+	<summary>
+ 選択されている行を検索します(SelectionChangedイベントにて使用する事)
+ </summary>
+	<param name="SSObj">対象SPREAD</param>
+	<param name="SelectRow">選択されている列</param>
+	<returns>選択されている行数</returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_SerchRow(FarPoint.Win.Spread.FpSpread,System.Int32,System.String,System.Int32[]@)">
+	<summary>
+ 目的の文字をSPREADから探す
+ </summary>
+	<param name="SSObj">対象SPREAD</param>
+	<param name="TargetCol">検索する列番号</param>
+	<param name="SerchText">検索する文字列</param>
+	<param name="TargetRows">合致する文字列がある行番号列</param>
+	<returns>発見した行番号数</returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_FitColWidth(FarPoint.Win.Spread.FpSpread,System.Int32[])">
+	<summary>
+ SPREADの特定列を伸ばして画面にフィットさせる
+ </summary>
+	<param name="SSObj"></param>
+	<param name="ResizeCol"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_AddRow(FarPoint.Win.Spread.FpSpread)">
+	<summary>
+ 新しい行を最下段に追加する
+ </summary>
+	<param name="SSObj">対象SPREAD</param>
+	<returns>追加した行番号</returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_DoSelectRow(FarPoint.Win.Spread.FpSpread,System.Int32)">
+	<summary>
+ 指定した行を選択状態にする
+ </summary>
+	<param name="SSObj">対象SPREAD</param>
+	<param name="Row">対象行番号</param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_SortIndicatorReset(FarPoint.Win.Spread.FpSpread)">
+	<summary>
+ ソートインジケータのリセット
+ </summary>
+	<param name="SSObj">対象SPREAD</param>
+	<remarks>Call SPREAD_SortIndicatorReset(SS)</remarks>
+</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_GetCellType(FarPoint.Win.Spread.FpSpread,System.Int32,System.Int32)">
+	<summary>
+ 指定セルの型を判別する
+ </summary>
+	<param name="SSObj">SPREAD</param>
+	<param name="Row">行番号</param>
+	<param name="Col">列番号</param>
+	<returns>enumSPREADCellType</returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD2CSV(FarPoint.Win.Spread.FpSpread,System.String,System.Boolean,System.Int32[])">
+	<summary>
+ SPREAD内データをCSVファイルに出力する
+ </summary>
+	<param name="SPREADObj">対象SPREADオブジェクト</param>
+	<param name="DefaltFileName">規定のファイル名</param>
+	<param name="WithHeader">ヘッダを出力（TRUE:出力する）</param>
+	<returns>出力したファイルフルパス</returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD2CSV_Part(FarPoint.Win.Spread.FpSpread,System.String,System.Boolean,System.Int32[])">
+	<summary>
+ チェックされたデータのみを出力する
+ </summary>
+	<param name="SPREADObj"></param>
+	<param name="DefaltFileName"></param>
+	<param name="WithHeader"></param>
+	<param name="SkipCol"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD2Excel(FarPoint.Win.Spread.FpSpread,System.String)">
+	<summary>
+ SPREADデータをExcel形式で保存する
+ </summary>
+	<param name="SPREADObj"></param>
+	<param name="DefaltFileName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModuleNSPREAD.SPREADClearFunctionKey(FarPoint.Win.Spread.FpSpread)">
+	<summary>
+ SPREADに設定されているファンクションキーを無効にします
+ </summary>
+	<param name="SPREADObj"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModuleNSPREAD.SPREAD_ResetSortIndicator(FarPoint.Win.Spread.FpSpread)">
+	<summary>
+ ソートインジケータのリセット
+ </summary>
+	<param name="SPREADObj"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.SheetCount(NPOI.SS.UserModel.IWorkbook)">
+	<summary>
+ ブックのシート数
+ </summary>
+	<param name="Book">対象ブック</param>
+	<returns>シート数</returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.FindSheet(NPOI.SS.UserModel.IWorkbook,System.String)">
+	<summary>
+ シートを探す
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetName">検索シート名</param>
+	<returns>-1：対象シートなし　0以上：見つかったシートインデックス</returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.SheetList(NPOI.SS.UserModel.IWorkbook)">
+	<summary>
+ シート名一覧
+ </summary>
+	<param name="Book">対象ブック</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.SelectSheet(NPOI.SS.UserModel.IWorkbook,System.Int32)">
+	<summary>
+ シートの選択
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetIndex">シートインデックス</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.SelectSheet(NPOI.SS.UserModel.IWorkbook,System.String)">
+	<summary>
+ シートの選択
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetName">選択シート名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.ClearCell(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32)">
+	<summary>
+ セルのクリア
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="Row">行番号</param>
+	<param name="Col">列番号</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.SetValueEX(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32,System.Object)">
+	<summary>
+ セルに値を設定する（拡張）
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="Row">行番号(0始まり)</param>
+	<param name="Col">列番号(0始まり)</param>
+	<param name="Value">設定値</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.SetValueEX(NPOI.SS.UserModel.ISheet,System.String,System.Object)">
+	<summary>
+ セルに値を設定する（拡張）
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="A1">セル番号</param>
+	<param name="Value">設定値</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.SetValue(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32,System.String)">
+	<summary>
+ セルに値を設定する
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="Row">行番号</param>
+	<param name="Col">列番号</param>
+	<param name="Value">設定値（String）</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.SetValue(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ セルに値を設定する
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="Row">行番号</param>
+	<param name="Col">列番号</param>
+	<param name="Value">設定値（Integer）</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.SetValue(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32,System.Decimal)">
+	<summary>
+ セルに値を設定する
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="Row">行番号</param>
+	<param name="Col">列番号</param>
+	<param name="Value">設定値（Decimal）</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.SetValue(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32,System.DateTime)">
+	<summary>
+ セルに値を設定する
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="Row">行番号</param>
+	<param name="Col">列番号</param>
+	<param name="Value">設定値（Date）</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.GetValue(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32)">
+	<summary>
+ セルの値を読み込む
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="Row">行番号(0始まり)</param>
+	<param name="Col">列番号(0始まり)</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.GetValue(NPOI.SS.UserModel.ISheet,System.String)">
+	<summary>
+ セルの値を読み込む
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="A1">セル番号（例：A1）</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.SearchText(NPOI.SS.UserModel.ISheet,System.String)">
+	<summary>
+ 特定シートから文字を探す
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="TargetTxet">検索文字</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.InsertRow(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32)">
+	<summary>
+ 行の挿入
+ </summary>
+	<param name="Sheet">対象シート</param>
+	<param name="StartRow">行挿入位置(0始まり)</param>
+	<param name="RowCount">挿入行数（省略：1行）</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.RemoveRow(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32)">
+	<summary>
+ 行の削除
+ </summary>
+	<param name="Sheet">対象シート</param>
+	<param name="DelStartRow">削除開始行</param>
+	<param name="RowCount">削除行数（省略：1行）</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.AddSheet(NPOI.SS.UserModel.IWorkbook,System.String)">
+	<summary>
+ シートの追加
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetName">設定シート名</param>
+	<returns></returns>
+	<remarks>シート名を指定しない場合は「Sheet1」などのデフォルト名になる</remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.EditSheetName(NPOI.SS.UserModel.IWorkbook,System.String,System.String)">
+	<summary>
+ シート名変更
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="OldSheetName">変更前シート名</param>
+	<param name="NewSheetName">変更後シート名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.EditSheetName(NPOI.SS.UserModel.IWorkbook,System.Int32,System.String)">
+	<summary>
+ シート名変更
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetIndex">変更シートインデックス</param>
+	<param name="NewSheetName">変更後シート名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.RemoveSheet(NPOI.SS.UserModel.IWorkbook,System.String)">
+	<summary>
+ シートの削除
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetName">削除シート名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.RemoveSheet(NPOI.SS.UserModel.IWorkbook,System.Int32)">
+	<summary>
+ シートの削除
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetIndex">削除シートインデックス</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.SheetActive(NPOI.SS.UserModel.IWorkbook,System.String)">
+	<summary>
+ アクティブシートの選択
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetName">対象シート名</param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.SheetActive(NPOI.SS.UserModel.IWorkbook,System.Int32)">
+	<summary>
+ アクティブシートの選択
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetIndex">対象シートインデックス名</param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.SheetSetPrintAria(NPOI.SS.UserModel.IWorkbook,System.String,System.String)">
+	<summary>
+ 印刷範囲の設定
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetName">対象シート名</param>
+	<param name="Aria">印刷範囲(例：$A$1:$P$50)</param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.SheetSetPrintFitMode(NPOI.SS.UserModel.IWorkbook,System.String,TackLabeler.ClassExcelWork.enumPrintFitMode)">
+	<summary>
+ 印刷フィット指定
+ </summary>
+	<param name="Book"></param>
+	<param name="SheetName"></param>
+	<param name="FitMode"></param>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.SaveExcelFile(System.String,NPOI.SS.UserModel.IWorkbook)">
+	<summary>
+ 保存
+ </summary>
+	<param name="FilePath">保存ファイルパス＆ファイル名</param>
+	<param name="Book">対象ブック名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.OpenExcelFile(System.String)">
+	<summary>
+ エクセルファイルを読み込む
+ </summary>
+	<param name="filePath"></param>
+	<returns></returns>
+	<remarks>
+  Dim book As IWorkbook = EX.OpenExcelFile(FileName)
+ </remarks>
+</member><member name="M:TackLabeler.ClassExcelWork.CreateExcelFile(System.String)">
+	<summary>
+ 新規Excelファイルを作成する
+ </summary>
+	<param name="filePath"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:TackLabeler.ClassExcelWork">
+	<summary>
+ Excel操作クラス(NPOI版)
+ </summary>
+	<remarks>
+ https://www.nuget.org/packages/NPOI/ を開いて、右上のInfoの中にある「Download package」を開き
+ ダウンロードしたファイルの拡張子をZIPに変更して解凍する
+ </remarks>
+</member><member name="M:TackLabeler.ModADO.SQLEncode(System.String)">
+	<summary>
+ 指定した文字をBASE64形式に変換する
+ </summary>
+	<param name="Value">変換元文字列</param>
+	<returns>変換後(BASE64)文字列</returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModADO.SQLDecode(System.String)">
+	<summary>
+ BASE64に変換された文字列を復号する
+ </summary>
+	<param name="ValueBASE64">変換元BASE64文字列</param>
+	<returns>復号文字列</returns>
+	<remarks></remarks>
 </member>
 </members>
 </doc>

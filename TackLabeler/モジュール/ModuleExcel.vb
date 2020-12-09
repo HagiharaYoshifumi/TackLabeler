@@ -15,32 +15,37 @@ Module ModuleExcel
     ''' <returns></returns>
     ''' <remarks></remarks>
     Public Function CreateExcel2Excel(Field As ArrayList, Data As ArrayList, MasterDoc As String, SaveFileName As String, SheetName As String) As String
+        Try
+            If MasterDoc <> "" AndAlso File.Exists(MasterDoc) Then
+                'マスタ文書からコピーを作成する
+                File.Copy(MasterDoc, SaveFileName)
 
-        If MasterDoc <> "" AndAlso File.Exists(MasterDoc) Then
-            'マスタ文書からコピーを作成する
-            File.Copy(MasterDoc, SaveFileName)
+                Dim book As IWorkbook = EX.OpenExcelFile(SaveFileName)
+                If EX.FindSheet(book, SheetName) > -1 Then
+                    Dim Sheet As ISheet = EX.SelectSheet(book, SheetName)
+                    For i As Integer = 0 To Field.Count - 1
+                        Dim Fld As String = String.Format("<{0}>", Field(i))
+                        Dim p As List(Of Point) = EX.SearchText(Sheet, Fld)
+                        If p.Count > 0 Then
+                            For Each PP As Point In p
+                                Call EX.SetValueEX(Sheet, PP.Y, PP.X, Data(i))
+                            Next
 
-            Dim book As IWorkbook = Ex.OpenExcelFile(SaveFileName)
-            If EX.FindSheet(book, SheetName) > -1 Then
-                Dim Sheet As ISheet = EX.SelectSheet(book, SheetName)
-                For i As Integer = 0 To Field.Count - 1
-                    Dim Fld As String = String.Format("<{0}>", Field(i))
-                    Dim p As List(Of Point) = EX.SearchText(Sheet, Fld)
-                    If p.Count > 0 Then
-                        For Each PP As Point In p
-                            Call EX.SetValueEX(Sheet, PP.Y, PP.X, Data(i))
-                        Next
-
-                    End If
-                Next
-                Call EX.SaveExcelFile(SaveFileName, book)
-                Return SaveFileName.ToString
+                        End If
+                    Next
+                    Call EX.SaveExcelFile(SaveFileName, book)
+                    Return SaveFileName.ToString
+                Else
+                    Return ""
+                End If
             Else
                 Return ""
             End If
-        Else
+
+        Catch ex As Exception
             Return ""
-        End If
+
+        End Try
 
     End Function
 End Module
