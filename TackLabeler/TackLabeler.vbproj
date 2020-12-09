@@ -78,6 +78,22 @@
     <Reference Include="GrapeCity.Win.Editors.v70, Version=7.0.2013.1127, Culture=neutral, PublicKeyToken=0ce01a33ce55ca12, processorArchitecture=MSIL" />
     <Reference Include="GrapeCity.Win.PluginInputMan, Version=7.0.2010.2008, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
     <Reference Include="GrapeCity.Win.PlusPak.v70, Version=7.0.2013.1127, Culture=neutral, PublicKeyToken=63a9ba12b6923243, processorArchitecture=MSIL" />
+    <Reference Include="NPOI, Version=2.5.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NPOI 2.2.1 binary package\Release\Net40\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.5.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NPOI 2.2.1 binary package\Release\Net40\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.5.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NPOI 2.2.1 binary package\Release\Net40\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.5.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NPOI 2.2.1 binary package\Release\Net40\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
     <Reference Include="Ookii.Dialogs">
       <HintPath>.\Ookii.Dialogs.dll</HintPath>
     </Reference>
@@ -110,9 +126,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="ClassFormControl.vb" />
-    <Compile Include="ClassPaperCollection.vb" />
-    <Compile Include="FindPaperForm.vb" />
+    <Compile Include="モジュール\ClassExcelWork.vb" />
+    <Compile Include="モジュール\ClassFormControl.vb" />
+    <Compile Include="モジュール\ClassPaperCollection.vb" />
+    <Compile Include="モジュール\FindPaperForm.vb" />
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
     </Compile>
@@ -141,6 +158,12 @@
       <DependentUpon>FrmDataFolder.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmDataFolder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="エクスポート\FrmExcelInsData.Designer.vb">
+      <DependentUpon>FrmExcelInsData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="エクスポート\FrmExcelInsData.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmLicense.Designer.vb">
@@ -337,13 +360,13 @@
     <Compile Include="FrmVerifiCheck.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmWordInsData.Designer.vb">
+    <Compile Include="エクスポート\FrmWordInsData.Designer.vb">
       <DependentUpon>FrmWordInsData.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmWordInsData.vb">
+    <Compile Include="エクスポート\FrmWordInsData.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Module2.vb" />
+    <Compile Include="モジュール\Module2.vb" />
     <Compile Include="FrmSelTack\2列\FrmSelTack_2x2.designer.vb">
       <DependentUpon>FrmSelTack_2x2.vb</DependentUpon>
     </Compile>
@@ -398,9 +421,10 @@
     <Compile Include="FrmSelTack\3列\FrmSelTack_3x8.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModuleStringReplace.vb" />
-    <Compile Include="ModuleWord.vb" />
-    <Compile Include="Settings.vb" />
+    <Compile Include="モジュール\ModuleExcel.vb" />
+    <Compile Include="モジュール\ModuleStringReplace.vb" />
+    <Compile Include="モジュール\ModuleWord.vb" />
+    <Compile Include="モジュール\Settings.vb" />
     <Compile Include="UserControlTextAlignment2.designer.vb">
       <DependentUpon>UserControlTextAlignment2.vb</DependentUpon>
     </Compile>
@@ -413,9 +437,9 @@
     <Compile Include="レポート\KOKUYO_KPC-E1121.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ModADO.vb" />
-    <Compile Include="Module1.vb" />
-    <Compile Include="ModuleNSPREAD.vb" />
+    <Compile Include="モジュール\ModADO.vb" />
+    <Compile Include="モジュール\Module1.vb" />
+    <Compile Include="モジュール\ModuleNSPREAD.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -477,6 +501,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDataFolder.resx">
       <DependentUpon>FrmDataFolder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="エクスポート\FrmExcelInsData.resx">
+      <DependentUpon>FrmExcelInsData.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLicense.resx">
       <DependentUpon>FrmLicense.vb</DependentUpon>
@@ -601,7 +628,7 @@
     <EmbeddedResource Include="FrmVerifiCheck.resx">
       <DependentUpon>FrmVerifiCheck.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmWordInsData.resx">
+    <EmbeddedResource Include="エクスポート\FrmWordInsData.resx">
       <DependentUpon>FrmWordInsData.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlTextAlignment2.resx">

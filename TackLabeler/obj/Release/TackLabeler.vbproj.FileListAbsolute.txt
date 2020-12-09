@@ -191,3 +191,10 @@ C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\Tack
 C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmVerifiCheck.resources
 C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmWordInsData.resources
 C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.vbproj.ResolveComReference.cache
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmExcelInsData.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\NPOI.dll
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\NPOI.OOXML.dll
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\NPOI.OpenXml4Net.dll
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\NPOI.OpenXmlFormats.dll
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\NPOI.xml

@@ -26,7 +26,7 @@ Partial Class FrmMain
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim SS_InputMapWhenFocusedNormal As FarPoint.Win.Spread.InputMap
-        Dim CheckBoxCellType5 As FarPoint.Win.Spread.CellType.CheckBoxCellType = New FarPoint.Win.Spread.CellType.CheckBoxCellType()
+        Dim CheckBoxCellType1 As FarPoint.Win.Spread.CellType.CheckBoxCellType = New FarPoint.Win.Spread.CellType.CheckBoxCellType()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMain))
         Me.C1Sizer1 = New C1.Win.C1Sizer.C1Sizer()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -162,6 +162,7 @@ Partial Class FrmMain
         Me.BtnCSV_Load = New C1.Win.C1Ribbon.RibbonButton()
         Me.RibbonGroup81 = New C1.Win.C1Ribbon.RibbonGroup()
         Me.BtnWordInsData = New C1.Win.C1Ribbon.RibbonButton()
+        Me.BtnExcelInsData = New C1.Win.C1Ribbon.RibbonButton()
         Me.RibbonSeparator3 = New C1.Win.C1Ribbon.RibbonSeparator()
         Me.BtnCSV_Save = New C1.Win.C1Ribbon.RibbonButton()
         Me.BtnCSV_SavePart = New C1.Win.C1Ribbon.RibbonButton()
@@ -647,7 +648,7 @@ Partial Class FrmMain
         Me.SS_Sheet1.ColumnCount = 21
         Me.SS_Sheet1.AlternatingRows.Get(1).BackColor = System.Drawing.Color.Azure
         Me.SS_Sheet1.ColumnHeader.Cells.Get(0, 0).Value = "出力"
-        Me.SS_Sheet1.Columns.Get(0).CellType = CheckBoxCellType5
+        Me.SS_Sheet1.Columns.Get(0).CellType = CheckBoxCellType1
         Me.SS_Sheet1.Columns.Get(0).HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center
         Me.SS_Sheet1.Columns.Get(0).Label = "出力"
         Me.SS_Sheet1.Columns.Get(0).VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center
@@ -2016,6 +2017,7 @@ Partial Class FrmMain
         'RibbonGroup81
         '
         Me.RibbonGroup81.Items.Add(Me.BtnWordInsData)
+        Me.RibbonGroup81.Items.Add(Me.BtnExcelInsData)
         Me.RibbonGroup81.Items.Add(Me.RibbonSeparator3)
         Me.RibbonGroup81.Items.Add(Me.BtnCSV_Save)
         Me.RibbonGroup81.Items.Add(Me.BtnCSV_SavePart)
@@ -2030,6 +2032,14 @@ Partial Class FrmMain
         Me.BtnWordInsData.SmallImage = CType(resources.GetObject("BtnWordInsData.SmallImage"), System.Drawing.Image)
         Me.BtnWordInsData.Text = "Word差込"
         Me.BtnWordInsData.ToolTip = resources.GetString("BtnWordInsData.ToolTip")
+        '
+        'BtnExcelInsData
+        '
+        Me.BtnExcelInsData.LargeImage = CType(resources.GetObject("BtnExcelInsData.LargeImage"), System.Drawing.Image)
+        Me.BtnExcelInsData.Name = "BtnExcelInsData"
+        Me.BtnExcelInsData.SmallImage = CType(resources.GetObject("BtnExcelInsData.SmallImage"), System.Drawing.Image)
+        Me.BtnExcelInsData.Text = "Excel差込"
+        Me.BtnExcelInsData.ToolTip = resources.GetString("BtnExcelInsData.ToolTip")
         '
         'RibbonSeparator3
         '
@@ -2527,5 +2537,6 @@ Partial Class FrmMain
     Friend WithEvents RibbonGroup8 As C1.Win.C1Ribbon.RibbonGroup
     Friend WithEvents BtnClipboad_Load As C1.Win.C1Ribbon.RibbonButton
     Friend WithEvents BtnCSV_Load As C1.Win.C1Ribbon.RibbonButton
+    Friend WithEvents BtnExcelInsData As C1.Win.C1Ribbon.RibbonButton
 
 End Class

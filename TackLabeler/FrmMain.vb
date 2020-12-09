@@ -3704,7 +3704,41 @@ Public Class FrmMain
             .ShowDialog(Me)
         End With
     End Sub
+    ''' <summary>
+    ''' TODO:Excelへの差込
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
+    Private Sub BtnExcelInsData_Click(sender As Object, e As EventArgs) Handles BtnExcelInsData.Click
 
+        Dim _WorkChecked As Boolean = False
+        With SS.ActiveSheet
+            For Row As Integer = 0 To .RowCount - 1
+                If FG(.Cells(Row, 0).Value, enum_FG.FG_Boolean) = True Then
+                    _WorkChecked = True
+                    Exit For
+                End If
+            Next
+        End With
+
+        If Not _WorkChecked Then
+            MsgBox("差し込みデータが選択されていません" & vbCrLf & "先に差し込むデータを選択してから行ってください", 48, "エラー")
+            Return
+        End If
+
+        Dim _TabTag As LocalTabCollection = GcTabControl1.TabPages(TabSelectedIndex).Tag
+        Dim No As Integer = _TabTag.Index
+        Dim PIndex As Integer = _TabTag.UsePaperIndex
+
+        With FrmExcelInsData
+            .SelectTabIndex = No
+            .SelectPaperIndex = PIndex
+            .TabCollection = _TabTag
+            .PaperCollection = PaperArray(PIndex)
+            .ShowDialog(Me)
+        End With
+    End Sub
 End Class
 
 Public Class LocalTabCollection
