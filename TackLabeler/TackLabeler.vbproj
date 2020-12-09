@@ -1,0 +1,698 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A89BBA7-8A60-421F-AE71-6E254F972812}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TackLabeler.My.MyApplication</StartupObject>
+    <RootNamespace>TackLabeler</RootNamespace>
+    <AssemblyName>TackLabeler</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TackLabeler.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TackLabeler.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Dryicons-Simplistica-Mail.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="C1.Win.C1Command.4, Version=4.0.20133.19605, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Ribbon.4, Version=4.0.20133.532, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Sizer.4, Version=4.1.20133.79, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.CalcEngine, Version=7.0.2010.2008, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Excel, Version=7.0.2010.2008, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.PDF, Version=7.0.2010.2008, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=7.0.2010.2008, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Win, Version=7.0.2010.2008, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Win.Chart, Version=7.0.2010.2008, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Win.SpreadJ, Version=7.0.2010.2008, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.ActiveReports.Chart.v7, Version=7.3.7964.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="GrapeCity.ActiveReports.Design.Win.v7, Version=7.3.7964.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="GrapeCity.ActiveReports.Diagnostics.v7, Version=7.3.7964.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="GrapeCity.ActiveReports.Document.v7, Version=7.3.7964.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="GrapeCity.ActiveReports.Export.Image.v7, Version=7.3.7964.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="GrapeCity.ActiveReports.Export.Pdf.v7, Version=7.3.7964.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.ActiveReports.Export.Rdf.v7, Version=7.3.7964.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="GrapeCity.ActiveReports.Extensibility.v7, Version=7.3.7964.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="GrapeCity.ActiveReports.v7, Version=7.3.7964.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="GrapeCity.ActiveReports.Viewer.Win.v7, Version=7.3.7964.1, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Framework.InputMan.v22, Version=2.2.2013.1127, Culture=neutral, PublicKeyToken=fdd90f5c44b73170" />
+    <Reference Include="GrapeCity.Framework.PlusPak.v22, Version=2.2.2013.1127, Culture=neutral, PublicKeyToken=fdd90f5c44b73170" />
+    <Reference Include="GrapeCity.Win.Editors.v70, Version=7.0.2013.1127, Culture=neutral, PublicKeyToken=0ce01a33ce55ca12, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=7.0.2010.2008, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Win.PlusPak.v70, Version=7.0.2013.1127, Culture=neutral, PublicKeyToken=63a9ba12b6923243, processorArchitecture=MSIL" />
+    <Reference Include="Ookii.Dialogs">
+      <HintPath>.\Ookii.Dialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="ClassFormControl.vb" />
+    <Compile Include="ClassPaperCollection.vb" />
+    <Compile Include="FindPaperForm.vb" />
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCloseDialog.Designer.vb">
+      <DependentUpon>FrmCloseDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCloseDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCSVSave_Select.Designer.vb">
+      <DependentUpon>FrmCSVSave_Select.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCSVSave_Select.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDataFolder.Designer.vb">
+      <DependentUpon>FrmDataFolder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDataFolder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLicense.Designer.vb">
+      <DependentUpon>FrmLicense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLicense.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.vb">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMoveTab.Designer.vb">
+      <DependentUpon>FrmMoveTab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMoveTab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNumber.Designer.vb">
+      <DependentUpon>FrmNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNumber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmpaperInfo.Designer.vb">
+      <DependentUpon>FrmpaperInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmpaperInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPosition2.Designer.vb">
+      <DependentUpon>FrmPosition2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPosition2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrinterPapers.Designer.vb">
+      <DependentUpon>FrmPrinterPapers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrinterPapers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelectExcelOption.Designer.vb">
+      <DependentUpon>FrmSelectExcelOption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelectExcelOption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\1列\FrmSelTack_1x2.designer.vb">
+      <DependentUpon>FrmSelTack_1x2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\1列\FrmSelTack_1x2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x10.designer.vb">
+      <DependentUpon>FrmSelTack_2x10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x12.designer.vb">
+      <DependentUpon>FrmSelTack_2x12.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x12.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x6.Designer.vb">
+      <DependentUpon>FrmSelTack_2x6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x7.designer.vb">
+      <DependentUpon>FrmSelTack_2x7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x9.designer.vb">
+      <DependentUpon>FrmSelTack_2x9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x10.designer.vb">
+      <DependentUpon>FrmSelTack_3x10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x12.designer.vb">
+      <DependentUpon>FrmSelTack_3x12.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x12.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x3.Designer.vb">
+      <DependentUpon>FrmSelTack_3x3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x4.designer.vb">
+      <DependentUpon>FrmSelTack_3x4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x5.designer.vb">
+      <DependentUpon>FrmSelTack_3x5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x6.designer.vb">
+      <DependentUpon>FrmSelTack_3x6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x9.designer.vb">
+      <DependentUpon>FrmSelTack_3x9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\4列\FrmSelTack_4x10.designer.vb">
+      <DependentUpon>FrmSelTack_4x10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\4列\FrmSelTack_4x10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\4列\FrmSelTack_4x12.designer.vb">
+      <DependentUpon>FrmSelTack_4x12.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\4列\FrmSelTack_4x12.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\4列\FrmSelTack_4x8.designer.vb">
+      <DependentUpon>FrmSelTack_4x8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\4列\FrmSelTack_4x8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\4列\FrmSelTack_4x9.designer.vb">
+      <DependentUpon>FrmSelTack_4x9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\4列\FrmSelTack_4x9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\ModuleFrmSelTack.vb" />
+    <Compile Include="FrmSetting.Designer.vb">
+      <DependentUpon>FrmSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTabRename.Designer.vb">
+      <DependentUpon>FrmTabRename.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTabRename.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTempForm.Designer.vb">
+      <DependentUpon>FrmTempForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTempForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmToIndex.Designer.vb">
+      <DependentUpon>FrmToIndex.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmToIndex.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditPaper.Designer.vb">
+      <DependentUpon>FrmEditPaper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditPaper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPaperList.Designer.vb">
+      <DependentUpon>FrmPaperList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPaperList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVerifiCheck.Designer.vb">
+      <DependentUpon>FrmVerifiCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVerifiCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWordInsData.Designer.vb">
+      <DependentUpon>FrmWordInsData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWordInsData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module2.vb" />
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x2.designer.vb">
+      <DependentUpon>FrmSelTack_2x2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x2.designer.vb">
+      <DependentUpon>FrmSelTack_3x2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x4.designer.vb">
+      <DependentUpon>FrmSelTack_2x4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x5.Designer.vb">
+      <DependentUpon>FrmSelTack_2x5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\1列\FrmSelTack_1x12.Designer.vb">
+      <DependentUpon>FrmSelTack_1x12.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\1列\FrmSelTack_1x12.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x8.Designer.vb">
+      <DependentUpon>FrmSelTack_2x8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x3.Designer.vb">
+      <DependentUpon>FrmSelTack_2x3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\2列\FrmSelTack_2x3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x7.Designer.vb">
+      <DependentUpon>FrmSelTack_3x7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x8.Designer.vb">
+      <DependentUpon>FrmSelTack_3x8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelTack\3列\FrmSelTack_3x8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleStringReplace.vb" />
+    <Compile Include="ModuleWord.vb" />
+    <Compile Include="Settings.vb" />
+    <Compile Include="UserControlTextAlignment2.designer.vb">
+      <DependentUpon>UserControlTextAlignment2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlTextAlignment2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="レポート\KOKUYO_KPC-E1121.Designer.vb">
+      <DependentUpon>KOKUYO_KPC-E1121.vb</DependentUpon>
+    </Compile>
+    <Compile Include="レポート\KOKUYO_KPC-E1121.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ModADO.vb" />
+    <Compile Include="Module1.vb" />
+    <Compile Include="ModuleNSPREAD.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="レポート\AOne_29320.Designer.vb">
+      <DependentUpon>AOne_29320.vb</DependentUpon>
+    </Compile>
+    <Compile Include="レポート\AOne_29320.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="レポート\KOKUYO_KPC-E1121_住所.Designer.vb">
+      <DependentUpon>KOKUYO_KPC-E1121_住所.vb</DependentUpon>
+    </Compile>
+    <Compile Include="レポート\KOKUYO_KPC-E1121_住所.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="レポート\KOKUYO_KPC-E1121_住所会社なし.Designer.vb">
+      <DependentUpon>KOKUYO_KPC-E1121_住所会社なし.vb</DependentUpon>
+    </Compile>
+    <Compile Include="レポート\KOKUYO_KPC-E1121_住所会社なし.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="レポート\KOKUYO_KPC-E1121_名前.Designer.vb">
+      <DependentUpon>KOKUYO_KPC-E1121_名前.vb</DependentUpon>
+    </Compile>
+    <Compile Include="レポート\KOKUYO_KPC-E1121_名前.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="レポート\SectionReport1.Designer.vb">
+      <DependentUpon>SectionReport1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="レポート\SectionReport1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCloseDialog.resx">
+      <DependentUpon>FrmCloseDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCSVSave_Select.resx">
+      <DependentUpon>FrmCSVSave_Select.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDataFolder.resx">
+      <DependentUpon>FrmDataFolder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLicense.resx">
+      <DependentUpon>FrmLicense.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMoveTab.resx">
+      <DependentUpon>FrmMoveTab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNumber.resx">
+      <DependentUpon>FrmNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmpaperInfo.resx">
+      <DependentUpon>FrmpaperInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPosition2.resx">
+      <DependentUpon>FrmPosition2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrinterPapers.resx">
+      <DependentUpon>FrmPrinterPapers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelectExcelOption.resx">
+      <DependentUpon>FrmSelectExcelOption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\1列\FrmSelTack_1x2.resx">
+      <DependentUpon>FrmSelTack_1x2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\2列\FrmSelTack_2x10.resx">
+      <DependentUpon>FrmSelTack_2x10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\2列\FrmSelTack_2x12.resx">
+      <DependentUpon>FrmSelTack_2x12.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\2列\FrmSelTack_2x6.resx">
+      <DependentUpon>FrmSelTack_2x6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\2列\FrmSelTack_2x7.resx">
+      <DependentUpon>FrmSelTack_2x7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\2列\FrmSelTack_2x9.resx">
+      <DependentUpon>FrmSelTack_2x9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\3列\FrmSelTack_3x10.resx">
+      <DependentUpon>FrmSelTack_3x10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\3列\FrmSelTack_3x12.resx">
+      <DependentUpon>FrmSelTack_3x12.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\3列\FrmSelTack_3x3.resx">
+      <DependentUpon>FrmSelTack_3x3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\3列\FrmSelTack_3x4.resx">
+      <DependentUpon>FrmSelTack_3x4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\3列\FrmSelTack_3x5.resx">
+      <DependentUpon>FrmSelTack_3x5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\3列\FrmSelTack_3x6.resx">
+      <DependentUpon>FrmSelTack_3x6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\3列\FrmSelTack_3x9.resx">
+      <DependentUpon>FrmSelTack_3x9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\4列\FrmSelTack_4x10.resx">
+      <DependentUpon>FrmSelTack_4x10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\4列\FrmSelTack_4x12.resx">
+      <DependentUpon>FrmSelTack_4x12.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\4列\FrmSelTack_4x8.resx">
+      <DependentUpon>FrmSelTack_4x8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\4列\FrmSelTack_4x9.resx">
+      <DependentUpon>FrmSelTack_4x9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetting.resx">
+      <DependentUpon>FrmSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTabRename.resx">
+      <DependentUpon>FrmTabRename.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTempForm.resx">
+      <DependentUpon>FrmTempForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmToIndex.resx">
+      <DependentUpon>FrmToIndex.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditPaper.resx">
+      <DependentUpon>FrmEditPaper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPaperList.resx">
+      <DependentUpon>FrmPaperList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\2列\FrmSelTack_2x2.resx">
+      <DependentUpon>FrmSelTack_2x2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\3列\FrmSelTack_3x2.resx">
+      <DependentUpon>FrmSelTack_3x2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\2列\FrmSelTack_2x4.resx">
+      <DependentUpon>FrmSelTack_2x4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\2列\FrmSelTack_2x5.resx">
+      <DependentUpon>FrmSelTack_2x5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\1列\FrmSelTack_1x12.resx">
+      <DependentUpon>FrmSelTack_1x12.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\2列\FrmSelTack_2x8.resx">
+      <DependentUpon>FrmSelTack_2x8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\2列\FrmSelTack_2x3.resx">
+      <DependentUpon>FrmSelTack_2x3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\3列\FrmSelTack_3x7.resx">
+      <DependentUpon>FrmSelTack_3x7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelTack\3列\FrmSelTack_3x8.resx">
+      <DependentUpon>FrmSelTack_3x8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVerifiCheck.resx">
+      <DependentUpon>FrmVerifiCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWordInsData.resx">
+      <DependentUpon>FrmWordInsData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTextAlignment2.resx">
+      <DependentUpon>UserControlTextAlignment2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="レポート\KOKUYO_KPC-E1121.resx">
+      <DependentUpon>KOKUYO_KPC-E1121.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="レポート\AOne_29320.resx">
+      <DependentUpon>AOne_29320.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="レポート\KOKUYO_KPC-E1121_住所.resx">
+      <DependentUpon>KOKUYO_KPC-E1121_住所.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="レポート\KOKUYO_KPC-E1121_住所会社なし.resx">
+      <DependentUpon>KOKUYO_KPC-E1121_住所会社なし.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="レポート\KOKUYO_KPC-E1121_名前.resx">
+      <DependentUpon>KOKUYO_KPC-E1121_名前.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="レポート\SectionReport1.resx">
+      <DependentUpon>SectionReport1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dryicons-Simplistica-Mail.ico" />
+    <Content Include="TextFile1.txt" />
+    <None Include="Resources\sort_switch.png" />
+    <None Include="Resources\sort_descending.png" />
+    <None Include="Resources\sort_ascending.png" />
+    <None Include="Resources\filter_clear.png" />
+    <None Include="Resources\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

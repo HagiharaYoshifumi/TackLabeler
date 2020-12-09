@@ -1,0 +1,269 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+exceltext
+</name>
+</assembly>
+<members>
+<member name="M:exceltext.ClassExcelWork.SheetCount(NPOI.SS.UserModel.IWorkbook)">
+	<summary>
+ ブックのシート数
+ </summary>
+	<param name="Book">対象ブック</param>
+	<returns>シート数</returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.FindSheet(NPOI.SS.UserModel.IWorkbook,System.String)">
+	<summary>
+ シートを探す
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetName">検索シート名</param>
+	<returns>-1：対象シートなし　0以上：見つかったシートインデックス</returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.SheetList(NPOI.SS.UserModel.IWorkbook)">
+	<summary>
+ シート名一覧
+ </summary>
+	<param name="Book">対象ブック</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.SelectSheet(NPOI.SS.UserModel.IWorkbook,System.Int32)">
+	<summary>
+ シートの選択
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetIndex">シートインデックス</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.SelectSheet(NPOI.SS.UserModel.IWorkbook,System.String)">
+	<summary>
+ シートの選択
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetName">選択シート名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.ClearCell(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32)">
+	<summary>
+ セルのクリア
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="Row">行番号</param>
+	<param name="Col">列番号</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.SetValueEX(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32,System.Object)">
+	<summary>
+ セルに値を設定する（拡張）
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="Row">行番号(0始まり)</param>
+	<param name="Col">列番号(0始まり)</param>
+	<param name="Value">設定値</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.SetValueEX(NPOI.SS.UserModel.ISheet,System.String,System.Object)">
+	<summary>
+ セルに値を設定する（拡張）
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="A1">セル番号</param>
+	<param name="Value">設定値</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.SetValue(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32,System.String)">
+	<summary>
+ セルに値を設定する
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="Row">行番号</param>
+	<param name="Col">列番号</param>
+	<param name="Value">設定値（String）</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.SetValue(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ セルに値を設定する
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="Row">行番号</param>
+	<param name="Col">列番号</param>
+	<param name="Value">設定値（Integer）</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.SetValue(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32,System.Decimal)">
+	<summary>
+ セルに値を設定する
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="Row">行番号</param>
+	<param name="Col">列番号</param>
+	<param name="Value">設定値（Decimal）</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.SetValue(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32,System.DateTime)">
+	<summary>
+ セルに値を設定する
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="Row">行番号</param>
+	<param name="Col">列番号</param>
+	<param name="Value">設定値（Date）</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.GetValue(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32)">
+	<summary>
+ セルの値を読み込む
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="Row">行番号(0始まり)</param>
+	<param name="Col">列番号(0始まり)</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.GetValue(NPOI.SS.UserModel.ISheet,System.String)">
+	<summary>
+ セルの値を読み込む
+ </summary>
+	<param name="Obj">対象シート</param>
+	<param name="A1">セル番号（例：A1）</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.InsertRow(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32)">
+	<summary>
+ 行の挿入
+ </summary>
+	<param name="Sheet">対象シート</param>
+	<param name="StartRow">行挿入位置(0始まり)</param>
+	<param name="RowCount">挿入行数（省略：1行）</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.RemoveRow(NPOI.SS.UserModel.ISheet,System.Int32,System.Int32)">
+	<summary>
+ 行の削除
+ </summary>
+	<param name="Sheet">対象シート</param>
+	<param name="DelStartRow">削除開始行</param>
+	<param name="RowCount">削除行数（省略：1行）</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.AddSheet(NPOI.SS.UserModel.IWorkbook,System.String)">
+	<summary>
+ シートの追加
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetName">設定シート名</param>
+	<returns></returns>
+	<remarks>シート名を指定しない場合は「Sheet1」などのデフォルト名になる</remarks>
+</member><member name="M:exceltext.ClassExcelWork.EditSheetName(NPOI.SS.UserModel.IWorkbook,System.String,System.String)">
+	<summary>
+ シート名変更
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="OldSheetName">変更前シート名</param>
+	<param name="NewSheetName">変更後シート名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.EditSheetName(NPOI.SS.UserModel.IWorkbook,System.Int32,System.String)">
+	<summary>
+ シート名変更
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetIndex">変更シートインデックス</param>
+	<param name="NewSheetName">変更後シート名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.RemoveSheet(NPOI.SS.UserModel.IWorkbook,System.String)">
+	<summary>
+ シートの削除
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetName">削除シート名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.RemoveSheet(NPOI.SS.UserModel.IWorkbook,System.Int32)">
+	<summary>
+ シートの削除
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetIndex">削除シートインデックス</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.SheetActive(NPOI.SS.UserModel.IWorkbook,System.String)">
+	<summary>
+ アクティブシートの選択
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetName">対象シート名</param>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.SheetActive(NPOI.SS.UserModel.IWorkbook,System.Int32)">
+	<summary>
+ アクティブシートの選択
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetIndex">対象シートインデックス名</param>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.SheetSetPrintAria(NPOI.SS.UserModel.IWorkbook,System.String,System.String)">
+	<summary>
+ 印刷範囲の設定
+ </summary>
+	<param name="Book">対象ブック</param>
+	<param name="SheetName">対象シート名</param>
+	<param name="Aria">印刷範囲(例：$A$1:$P$50)</param>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.SheetSetPrintFitMode(NPOI.SS.UserModel.IWorkbook,System.String,exceltext.ClassExcelWork.enumPrintFitMode)">
+	<summary>
+ 印刷フィット指定
+ </summary>
+	<param name="Book"></param>
+	<param name="SheetName"></param>
+	<param name="FitMode"></param>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.SaveExcelFile(System.String,NPOI.SS.UserModel.IWorkbook)">
+	<summary>
+ 保存
+ </summary>
+	<param name="FilePath">保存ファイルパス＆ファイル名</param>
+	<param name="Book">対象ブック名</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:exceltext.ClassExcelWork.OpenExcelFile(System.String)">
+	<summary>
+ エクセルファイルを読み込む
+ </summary>
+	<param name="filePath"></param>
+	<returns></returns>
+	<remarks>
+  Dim book As IWorkbook = EX.OpenExcelFile(FileName)
+ </remarks>
+</member><member name="M:exceltext.ClassExcelWork.CreateExcelFile(System.String)">
+	<summary>
+ 新規Excelファイルを作成する
+ </summary>
+	<param name="filePath"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:exceltext.ClassExcelWork">
+	<summary>
+ Excel操作クラス(NPOI版)
+ </summary>
+	<remarks>
+ https://www.nuget.org/packages/NPOI/ を開いて、右上のInfoの中にある「Download package」を開き
+ ダウンロードしたファイルの拡張子をZIPに変更して解凍する
+ </remarks>
+</member><member name="P:exceltext.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:exceltext.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:exceltext.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

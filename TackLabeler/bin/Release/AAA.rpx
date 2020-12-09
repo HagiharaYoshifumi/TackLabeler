@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.2" PrintWidth="9796.535999999981771257361104" DocumentName="ActiveReports Document" ScriptLang="VB.NET" UserData="" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; font-family: &quot;MS UI Gothic&quot;; ddo-char-set: 128" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; font-family: &quot;MS UI Gothic&quot;; ddo-char-set: 128" />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: inherit; font-family: &quot;MS UI Gothic&quot;; ddo-char-set: 128" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; ddo-char-set: 128" />
+  </StyleSheet>
+  <Sections>
+ <Section Type="Detail" Name="Detail" Height="2422.6856127491227420072341691" ColumnCount="2" ColumnDirection="1" ColumnSpacing="0" BackColor="16777215" KeepTogether="1">
+<Control Type="AR.Shape" Name="Shape1" Visible="1" Left="0" Top="0" Width="5952.999999999996790" Height="2422.6856127491227420072341691" BackColor="16777215" LineColor="8421504" LineStyle="2" RoundingRadius="9.999999"/>
+<Control Type="AR.Field" Name="TxtFieldShape" DataField="FieldShape" Visible="1" Left="0" Top="0" Width="566.6825321275580" Height="283.5634893903670" Text="STRING" Style="font-family: ＭＳ Ｐ明朝; font-size: 10pt; font-weight: none; text-align: center; vertical_align: middle; ddo_font_vertical: none; ddo-char-set: 128; text_justify: auto; ddo-shrink-to-fit: none/>" />
+<Control Type="AR.Field" Name="TxtField1" DataField="Field1" Visible="1" Left="0" Top="283.5634893903670" Width="1133.3650642551160" Height="283.5634893903670" Text="STRING" Style="font-family: ＭＳ Ｐ明朝; font-size: 10pt; font-weight: none; text-align: center; vertical_align: middle; ddo_font_vertical: none; ddo-char-set: 128; text_justify: auto; ddo-shrink-to-fit: none/>" />
+<Control Type="AR.Field" Name="TxtField2" DataField="Field2" Visible="1" Left="0" Top="567.1269787807340" Width="1133.3650642551160" Height="283.5634893903670" Text="STRING" Style="font-family: ＭＳ Ｐ明朝; font-size: 10pt; font-weight: none; text-align: center; vertical_align: middle; ddo_font_vertical: none; ddo-char-set: 128; text_justify: auto; ddo-shrink-to-fit: none/>" />
+<Control Type="AR.Field" Name="TxtField3" DataField="Field3" Visible="1" Left="0" Top="850.6904681711010" Width="1133.3650642551160" Height="283.5634893903670" Text="STRING" Style="font-family: ＭＳ Ｐ明朝; font-size: 10pt; font-weight: none; text-align: center; vertical_align: middle; ddo_font_vertical: none; ddo-char-set: 128; text_justify: auto; ddo-shrink-to-fit: none/>" />
+
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <XmlDataSource FileURL="C:\Users\yhagihara\AppData\Roaming\NKS\TackLabeler\RepData.xml"  Pattern="//ClassPreviewFieldCollection" />
+  </DataSources>
+  <Script><![CDATA[Sub Detail_Format
+	  Shape1.Visible = (TxtFieldShape.Text <> "")
+End Sub
+
+
+]]></Script>
+<PageSettings LeftMargin="1076" RightMargin="0" TopMargin="1190" BottomMargin="0" PaperSize="9" PaperWidth="11900" PaperHeight="16843" PaperName="" Orientation="1" />
+  <Parameters />
+</ActiveReportsLayout>

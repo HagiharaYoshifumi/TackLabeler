@@ -1,0 +1,65 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TackLabeler
+</name>
+</assembly>
+<members>
+<member name="M:TackLabeler.FrmMain.LoadTab">
+	<summary>
+ タブ情報読込
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmMain.SaveTab">
+	<summary>
+ データ書込
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.FrmMain.LoadTabData">
+	<summary>
+ データ読込
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModADO.SQLEncode(System.String)">
+	<summary>
+ 指定した文字をBASE64形式に変換する
+ </summary>
+	<param name="Value">変換元文字列</param>
+	<returns>変換後(BASE64)文字列</returns>
+	<remarks></remarks>
+</member><member name="M:TackLabeler.ModADO.SQLDecode(System.String)">
+	<summary>
+ BASE64に変換された文字列を復号する
+ </summary>
+	<param name="ValueBASE64">変換元BASE64文字列</param>
+	<returns>復号文字列</returns>
+	<remarks></remarks>
+</member><member name="P:TackLabeler.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:TackLabeler.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:TackLabeler.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:TackLabeler.Module1.NFuncSystemFullPath(System.Environment.SpecialFolder,System.String)">
+	<summary>
+ 特殊フォルダパスを検索する
+ </summary>
+	<param name="TargetFolder">対象となる特殊フォルダ</param>
+	<param name="FileName">ファイル名</param>
+	<returns>ファイル名を含むフルパス</returns>
+	<remarks>ファイル名指定時
+ ファイル名指定時はファイル名を含むフルパスを返します。(特殊フォルダ名＋固定フォルダ名＋ファイル名)またその特殊フォルダが無い場合は自動的に作成されます。
+ ファイル名が未指定の場合は特殊フォルダのパスを返します。(特殊フォルダ名＋固定フォルダ）但しこのフォルダの自動作成は行われません
+ 　　また、特殊フォルダ自体が存在しない場合は””が帰ります。
+ </remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TackLabeler", "TackLabeler\TackLabeler.vbproj", "{8A89BBA7-8A60-421F-AE71-6E254F972812}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TackLabelerLicense", "TackLabelerLicense\TackLabelerLicense.vbproj", "{A495F93E-7E0D-4BBF-AF60-C2BABD6B88F4}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TackDataAllClear", "TackDataAllClear\TackDataAllClear.vbproj", "{FA902FAD-1EA9-43F9-9AEF-CC330EAC8EEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A89BBA7-8A60-421F-AE71-6E254F972812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A89BBA7-8A60-421F-AE71-6E254F972812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A89BBA7-8A60-421F-AE71-6E254F972812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A89BBA7-8A60-421F-AE71-6E254F972812}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A495F93E-7E0D-4BBF-AF60-C2BABD6B88F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A495F93E-7E0D-4BBF-AF60-C2BABD6B88F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A495F93E-7E0D-4BBF-AF60-C2BABD6B88F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A495F93E-7E0D-4BBF-AF60-C2BABD6B88F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA902FAD-1EA9-43F9-9AEF-CC330EAC8EEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA902FAD-1EA9-43F9-9AEF-CC330EAC8EEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA902FAD-1EA9-43F9-9AEF-CC330EAC8EEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA902FAD-1EA9-43F9-9AEF-CC330EAC8EEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.2" PrintWidth="9796.535999999981771257361104" DocumentName="ActiveReports" ScriptLang="VB.NET" UserData="" MasterReport="0>>>>>>>>>">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; font-family: &quot;MS UI Gothic&quot;; ddo-char-set: 128" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; font-family: &quot;MS UI Gothic&quot;; ddo-char-set: 128" />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: inherit; font-family: &quot;MS UI Gothic&quot;; ddo-char-set: 128" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; ddo-char-set: 128" />
+  </StyleSheet>
+  <Sections>
+<Section Type="Detail" Name="Detail" Height="2420.7869999999975485158974642" ColumnCount="2" ColumnDirection="1" ColumnSpacing="0" BackColor="16777215" KeepTogether="1">
+<Control Type="AR.Shape" Name="Shape1" Left="0" Top="0" Width="4898.2680000000022192793231032" Height="2398.1100000000018388996154506" BackColor="16777215" LineColor="8421504" LineStyle="2" RoundingRadius="9.999999" />
+<Control Type="AR.Field" Name="txt郵便番号1" DataField="郵便番号" Visible="0" Left="113.38580000000019102529978261" Top="113.38579999999990503625560278" Width="1360.6299999999987275247048812" Height="288.00000000000015631580414971" Text="txt郵便番号1" Style="font-family: ＭＳ Ｐ明朝; vertical-align: middle; ddo-char-set: 1; ddo-font-vertical: none" />
+<Control Type="AR.Field" Name="txt住所_xFF11_1" DataField="住所_xFF11_" Visible="0" Left="113.38580000000019102529978261" Top="453.54339999999985524092476828" Width="4535.4329999999987290647600292" Height="340.15749999999983265671798692" Text="txt住所_xFF11_1" Style="font-family: ＭＳ Ｐ明朝; ddo-char-set: 1" />
+<Control Type="AR.Field" Name="txt会社名1" DataField="会社名" Visible="1" Left="113.38580000000019102529978261" Top="708.63165318289105418267674026" Width="4535.4329999999987290647600292" Height="340.15749999999983265671798692" Text="txt会社名1" Style="font-family: ＭＳ Ｐ明朝; font-size: 14pt; font-weight: normal; vertical-align: middle; ddo-char-set: 1" />
+<Control Type="AR.Field" Name="txt部署名1" DataField="部署名" Visible="0" Left="212.03150000000013097929956202" Top="1133.8579999999990503625560278" Width="4436.7869999999980625997368671" Height="288.00000000000015631580414971" Text="txt部署名1" Style="font-family: ＭＳ Ｐ明朝; ddo-char-set: 1; ddo-shrink-to-fit: true" />
+<Control Type="AR.Field" Name="txt名前1" DataField="名前" Visible="1" Left="226.77159999999981536806743767" Top="1115.6104314584011865229780596" Width="4422.0469999999974870162458639" Height="401.38559999999982625615739535" Text="txt名前1" Style="font-family: ＭＳ Ｐ明朝; font-size: 14pt; font-weight: bold; text-align: right; ddo-char-set: 1; ddo-shrink-to-fit: true" />
+<Control Type="AR.Field" Name="txt注意書き1" DataField="注意書き" Visible="1" Left="1700.7870000000000319668361014" Top="165.54330000000014850414822073" Width="2948.0309999999975174430268173" Height="288.00000000000015631580414971" Text="txt注意書き1" Style="font-family: ＭＳ Ｐ明朝; font-weight: bold; text-align: right; vertical-align: middle; ddo-char-set: 1; ddo-shrink-to-fit: true" />
+<Control Type="AR.Field" Name="txt備考1" DataField="備考" Visible="1" Left="113.38580000000019102529978261" Top="1587.4010000000018381735487662" Width="3061.4169999999987594915409827" Height="680.31489999999898063850601454" Text="txt備考1" Style="font-family: ＭＳ Ｐ明朝; font-size: 9pt; ddo-char-set: 1" /> 
+<Control Type="AR.Field" Name="txt枠表示1" DataField="枠表示" Visible="0" Left="3390.2370000000009810416181899" Top="2040.9450000000001301942654830" Width="805.0397000000004055035270225" Height="288.00000000000015631580414971" Text="txt枠表示1" Style="font-family: ＭＳ Ｐ明朝; ddo-char-set: 1" /> 
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <XmlDataSource FileURL="C:\Users\yhagihara\AppData\Roaming\NKS\TackLabeler\RepData.xml" Pattern="//RepDataCollection" />
+  </DataSources>
+  <Script><![CDATA[Sub Detail_Format
+	  Shape1.Visible = (txt枠表示1.Text <> "")
+End Sub
+
+
+]]></Script>
+<PageSettings LeftMargin="1054" RightMargin="0" TopMargin="1201" BottomMargin="0" PaperSize="9" PaperWidth="11905" PaperHeight="16837" PaperName="" Orientation="1" />
+  <Parameters />
+</ActiveReportsLayout>

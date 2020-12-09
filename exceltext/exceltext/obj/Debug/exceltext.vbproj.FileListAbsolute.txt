@@ -1,0 +1,8 @@
+C:\Makesource\TackLabeler(タックシール印刷)\exceltext\exceltext\bin\Debug\exceltext.exe
+C:\Makesource\TackLabeler(タックシール印刷)\exceltext\exceltext\bin\Debug\exceltext.pdb
+C:\Makesource\TackLabeler(タックシール印刷)\exceltext\exceltext\bin\Debug\exceltext.xml
+C:\Makesource\TackLabeler(タックシール印刷)\exceltext\exceltext\obj\Debug\exceltext.Resources.resources
+C:\Makesource\TackLabeler(タックシール印刷)\exceltext\exceltext\obj\Debug\exceltext.vbproj.GenerateResource.Cache
+C:\Makesource\TackLabeler(タックシール印刷)\exceltext\exceltext\obj\Debug\exceltext.exe
+C:\Makesource\TackLabeler(タックシール印刷)\exceltext\exceltext\obj\Debug\exceltext.xml
+C:\Makesource\TackLabeler(タックシール印刷)\exceltext\exceltext\obj\Debug\exceltext.pdb

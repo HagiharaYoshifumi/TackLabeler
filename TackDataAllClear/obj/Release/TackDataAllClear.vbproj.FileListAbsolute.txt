@@ -1,0 +1,9 @@
+C:\Makesource\TackLabeler(タックシール印刷)\TackDataAllClear\obj\Release\TackDataAllClear.Form1.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackDataAllClear\obj\Release\TackDataAllClear.Resources.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackDataAllClear\obj\Release\TackDataAllClear.vbproj.GenerateResource.Cache
+C:\Makesource\TackLabeler(タックシール印刷)\TackDataAllClear\bin\Release\TackDataAllClear.exe
+C:\Makesource\TackLabeler(タックシール印刷)\TackDataAllClear\bin\Release\TackDataAllClear.pdb
+C:\Makesource\TackLabeler(タックシール印刷)\TackDataAllClear\bin\Release\TackDataAllClear.xml
+C:\Makesource\TackLabeler(タックシール印刷)\TackDataAllClear\obj\Release\TackDataAllClear.exe
+C:\Makesource\TackLabeler(タックシール印刷)\TackDataAllClear\obj\Release\TackDataAllClear.xml
+C:\Makesource\TackLabeler(タックシール印刷)\TackDataAllClear\obj\Release\TackDataAllClear.pdb

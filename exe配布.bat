@@ -1,0 +1,5 @@
+copy C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\TackLabeler.exe \\kst0050\NKSApplication\TackLabeler(タックシール印刷)
+copy C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\ReportMaster.txt \\kst0050\NKSApplication\TackLabeler(タックシール印刷)
+copy C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\ZipData.mdb \\kst0050\NKSApplication\TackLabeler(タックシール印刷)
+copy "C:\Makesource\TackLabeler(タックシール印刷)\TackLabelerSetup\製品構成 1\リリース 1\DiskImages\Disk1\TackLabeler_Setup.exe" \\kst0050\NKSApplication\TackLabeler(タックシール印刷)
+copy "C:\Makesource\TackLabeler(タックシール印刷)\TackLabelerPatch\TackLabeler_PatchSetup.exe" \\kst0050\NKSApplication\TackLabeler(タックシール印刷)

@@ -1,0 +1,193 @@
+C:\Makesource\TackLabeler\TackLabeler\bin\Release\TackLabeler.exe
+C:\Makesource\TackLabeler\TackLabeler\bin\Release\TackLabeler.pdb
+C:\Makesource\TackLabeler\TackLabeler\bin\Release\TackLabeler.xml
+C:\Makesource\TackLabeler\TackLabeler\bin\Release\C1.Win.C1Sizer.4.dll
+C:\Makesource\TackLabeler\TackLabeler\bin\Release\C1.Win.C1Sizer.4.xml
+C:\Makesource\TackLabeler\TackLabeler\obj\Release\TackLabeler.FrmMain.resources
+C:\Makesource\TackLabeler\TackLabeler\obj\Release\TackLabeler.Resources.resources
+C:\Makesource\TackLabeler\TackLabeler\obj\Release\TackLabeler.vbproj.GenerateResource.Cache
+C:\Makesource\TackLabeler\TackLabeler\obj\Release\TackLabeler.exe.licenses
+C:\Makesource\TackLabeler\TackLabeler\obj\Release\TackLabeler.exe
+C:\Makesource\TackLabeler\TackLabeler\obj\Release\TackLabeler.xml
+C:\Makesource\TackLabeler\TackLabeler\obj\Release\TackLabeler.pdb
+C:\Makesource\TackLabeler\TackLabeler\obj\Release\TackLabeler.KOKUYO_KPC_E1121.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.exe
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.xml
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.pdb
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\TackLabeler.exe
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\TackLabeler.pdb
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\TackLabeler.xml
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\C1.Win.C1Sizer.4.dll
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\C1.Win.C1Sizer.4.xml
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.Resources.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.KOKUYO_KPC_E1121.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.vbproj.GenerateResource.Cache
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.exe.licenses
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\C1.Win.C1Ribbon.4.dll
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\C1.Win.C1Ribbon.4.xml
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmTabRename.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x6.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\TackLabeler.exe.config
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.KOKUYO_KPC_E1121_住所.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.KOKUYO_KPC_E1121_名前.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.KOKUYO_KPC_E1121_住所会社なし.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.vbprojResolveAssemblyReference.cache
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.SectionReport1.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmToIndex.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmMoveTab.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSetting.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmLicense.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmNumber.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.AOne_29320.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x3.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\bin\Release\TackLabeler.exe.config
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.exe
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.xml
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.pdb
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\bin\Release\TackLabeler.exe
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\bin\Release\TackLabeler.pdb
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\bin\Release\TackLabeler.xml
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\bin\Release\C1.Win.C1Ribbon.4.dll
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\bin\Release\C1.Win.C1Sizer.4.dll
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\bin\Release\C1.Win.C1Ribbon.4.xml
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\bin\Release\C1.Win.C1Sizer.4.xml
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.vbprojResolveAssemblyReference.cache
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.FrmCount.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.FrmEditPaperList.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.FrmLicense.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.FrmMain.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.FrmMoveTab.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.FrmNumber.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.FrmSeekData.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x6.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x3.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.FrmSetting.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.FrmTabRename.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.FrmTack.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.FrmToIndex.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.KOKUYO_KPC_E1121.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.Resources.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.AOne_29320.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.KOKUYO_KPC_E1121_住所.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.KOKUYO_KPC_E1121_住所会社なし.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.KOKUYO_KPC_E1121_名前.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.SectionReport1.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.vbproj.GenerateResource.Cache
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.exe.licenses
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.Form1.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.FrmEditPaper.resources
+C:\Makesource\TackLabeler(タックシール印刷)_変更\TackLabeler\obj\Release\TackLabeler.FrmPaperList.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.Form1.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmEditPaper.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmPaperList.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelectExcelOption.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmCSVSave_Select.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmDataFolder.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmpaperInfo.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\C1.Win.C1Command.4.dll
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\C1.Win.C1Command.4.xml
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.Form2.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmMain.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\bin\Release\TackLabeler.exe.config
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.exe
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.xml
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.pdb
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\bin\Release\TackLabeler.exe
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\bin\Release\TackLabeler.pdb
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\bin\Release\TackLabeler.xml
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\bin\Release\C1.Win.C1Command.4.dll
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\bin\Release\C1.Win.C1Ribbon.4.dll
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\bin\Release\C1.Win.C1Sizer.4.dll
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\bin\Release\C1.Win.C1Command.4.xml
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\bin\Release\C1.Win.C1Ribbon.4.xml
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\bin\Release\C1.Win.C1Sizer.4.xml
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.vbprojResolveAssemblyReference.cache
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.Form1.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.Form2.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmCSVSave_Select.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmDataFolder.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmLicense.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmMain.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmMoveTab.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmNumber.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmpaperInfo.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSeekData.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelectExcelOption.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x6.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x3.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSetting.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmTabRename.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmToIndex.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmEditPaper.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmPaperList.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.KOKUYO_KPC_E1121.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.Resources.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.AOne_29320.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.KOKUYO_KPC_E1121_住所.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.KOKUYO_KPC_E1121_住所会社なし.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.KOKUYO_KPC_E1121_名前.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.SectionReport1.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.vbproj.GenerateResource.Cache
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.exe.licenses
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmPrinterPapers.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmPosition2.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmTempForm.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmCloseDialog.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_1x2.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x2.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x2.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x4.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x5.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_1x12.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x8.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x6.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x3.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x7.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x8.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x10.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x12.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x7.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x9.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x10.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x12.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x4.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x5.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x9.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_4x10.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_4x12.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_4x8.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmSelTack_4x9.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmCloseDialog.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmDataReplace.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmPosition2.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmPrinterPapers.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_1x2.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x10.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x12.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x7.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x9.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x10.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x12.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x4.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x5.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x6.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x9.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_4x10.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_4x12.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_4x8.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_4x9.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmTempForm.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x2.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x2.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x4.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x5.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_1x12.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x8.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_2x3.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x7.resources
+C:\Makesource\TackLabeler(タックシール印刷) - コピー\TackLabeler\obj\Release\TackLabeler.FrmSelTack_3x8.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\Ookii.Dialogs.dll
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.UserControlTextAlignment2.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmVerifiCheck.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.FrmWordInsData.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Release\TackLabeler.vbproj.ResolveComReference.cache

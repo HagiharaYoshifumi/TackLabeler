@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.2" PrintWidth="9796.536" DocumentName="ActiveReports Document" ScriptLang="VB.NET" UserData="" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; font-family: &quot;MS UI Gothic&quot;; ddo-char-set: 128" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; font-family: &quot;MS UI Gothic&quot;; ddo-char-set: 128" />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: inherit; font-family: &quot;MS UI Gothic&quot;; ddo-char-set: 128" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; ddo-char-set: 128" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="Detail" Name="Detail" Height="2420.787" ColumnCount="2" ColumnDirection="1" BackColor="16777215" KeepTogether="1">
+      <Control Type="AR.Shape" Name="Shape1" Left="0" Top="0" Width="4898.268" Height="2398.11" BackColor="16777215" LineColor="8421504" LineStyle="2" RoundingRadius="9.999999" />
+      <Control Type="AR.Field" Name="txt住所_xFF11_1" DataField="住所_xFF11_" Left="113.3858" Top="453.5434" Width="4535.433" Height="340.1575" Text="txt住所_xFF11_1" Style="font-family: ＭＳ Ｐ明朝; font-size: 12pt; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="txt名前1" DataField="名前" Left="226.7716" Top="941.6693" Width="4422.047" Height="532.3466" Text="txt名前1" Style="font-family: ＭＳ Ｐ明朝; font-size: 16pt; font-weight: bold; text-align: right; ddo-char-set: 1; ddo-shrink-to-fit: true" />
+      <Control Type="AR.Field" Name="txt注意書き1" DataField="注意書き" Left="226.7718" Top="165.5433" Width="4422.047" Height="288" Text="txt注意書き1" Style="font-family: ＭＳ Ｐ明朝; font-weight: bold; text-align: right; vertical-align: middle; ddo-char-set: 1; ddo-shrink-to-fit: true" />
+      <Control Type="AR.Field" Name="txt備考1" DataField="備考" Left="113.3858" Top="1587.401" Width="4535.433" Height="680.3149" Text="txt備考1" Style="font-family: ＭＳ Ｐ明朝; font-size: 9pt; ddo-char-set: 1" />
+      <Control Type="AR.Field" Name="txt枠表示1" DataField="枠表示" Visible="0" Left="4081.89" Top="793.7007" Width="805.0397" Height="288" Text="txt枠表示1" Style="font-family: ＭＳ Ｐ明朝; ddo-char-set: 1" />
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <XmlDataSource FileURL="C:\Users\yhagihara\AppData\Roaming\NKS\TackLabeler\RepData.xml" Pattern="//RepDataCollection" />
+  </DataSources>
+  <Script><![CDATA[Sub Detail_Format
+	Shape1.Visible = (txt枠表示1.Text <> "")
+End Sub
+
+
+]]></Script>
+  <PageSettings LeftMargin="1054" RightMargin="0" TopMargin="1202" BottomMargin="0" PaperSize="9" PaperWidth="11906" PaperHeight="16838" PaperName="" Orientation="1" />
+  <Parameters />
+</ActiveReportsLayout>

@@ -1,0 +1,37 @@
+C:\Users\yhagihara\AppData\Local\Temporary Projects\TackLabeler\bin\Debug\TackLabeler.exe
+C:\Users\yhagihara\AppData\Local\Temporary Projects\TackLabeler\bin\Debug\TackLabeler.pdb
+C:\Users\yhagihara\AppData\Local\Temporary Projects\TackLabeler\bin\Debug\TackLabeler.xml
+C:\Users\yhagihara\AppData\Local\Temporary Projects\TackLabeler\bin\Debug\C1.Win.C1Sizer.4.dll
+C:\Users\yhagihara\AppData\Local\Temporary Projects\TackLabeler\bin\Debug\C1.Win.C1Sizer.4.xml
+C:\Users\yhagihara\AppData\Local\Temporary Projects\TackLabeler\obj\Debug\TackLabeler.FrmMain.resources
+C:\Users\yhagihara\AppData\Local\Temporary Projects\TackLabeler\obj\Debug\TackLabeler.Resources.resources
+C:\Users\yhagihara\AppData\Local\Temporary Projects\TackLabeler\obj\Debug\TackLabeler.vbproj.GenerateResource.Cache
+C:\Users\yhagihara\AppData\Local\Temporary Projects\TackLabeler\obj\Debug\TackLabeler.exe.licenses
+C:\Users\yhagihara\AppData\Local\Temporary Projects\TackLabeler\obj\Debug\TackLabeler.exe
+C:\Users\yhagihara\AppData\Local\Temporary Projects\TackLabeler\obj\Debug\TackLabeler.xml
+C:\Users\yhagihara\AppData\Local\Temporary Projects\TackLabeler\obj\Debug\TackLabeler.pdb
+C:\Makesource\TackLabeler\TackLabeler\obj\Debug\TackLabeler.exe
+C:\Makesource\TackLabeler\TackLabeler\obj\Debug\TackLabeler.xml
+C:\Makesource\TackLabeler\TackLabeler\obj\Debug\TackLabeler.pdb
+C:\Makesource\TackLabeler\TackLabeler\bin\Debug\TackLabeler.exe
+C:\Makesource\TackLabeler\TackLabeler\bin\Debug\TackLabeler.pdb
+C:\Makesource\TackLabeler\TackLabeler\bin\Debug\TackLabeler.xml
+C:\Makesource\TackLabeler\TackLabeler\bin\Debug\C1.Win.C1Sizer.4.dll
+C:\Makesource\TackLabeler\TackLabeler\bin\Debug\C1.Win.C1Sizer.4.xml
+C:\Makesource\TackLabeler\TackLabeler\obj\Debug\TackLabeler.FrmMain.resources
+C:\Makesource\TackLabeler\TackLabeler\obj\Debug\TackLabeler.Resources.resources
+C:\Makesource\TackLabeler\TackLabeler\obj\Debug\TackLabeler.vbproj.GenerateResource.Cache
+C:\Makesource\TackLabeler\TackLabeler\obj\Debug\TackLabeler.exe.licenses
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Debug\TackLabeler.exe
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Debug\TackLabeler.xml
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Debug\TackLabeler.pdb
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Debug\TackLabeler.exe
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Debug\TackLabeler.pdb
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Debug\TackLabeler.xml
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Debug\C1.Win.C1Sizer.4.dll
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Debug\C1.Win.C1Sizer.4.xml
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Debug\TackLabeler.FrmMain.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Debug\TackLabeler.Resources.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Debug\TackLabeler.KOKUYO_KPC_E1121.resources
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Debug\TackLabeler.vbproj.GenerateResource.Cache
+C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\obj\Debug\TackLabeler.exe.licenses

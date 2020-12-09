@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+{RPX_ReportsLayout}
+  <StyleSheet>
+    <Style Name="Normal" Value="font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; font-family: &quot;MS UI Gothic&quot;; ddo-char-set: 128" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; font-family: &quot;MS UI Gothic&quot;; ddo-char-set: 128" />
+    <Style Name="Heading2" Value="font-size: 14pt; font-weight: bold; font-style: inherit; font-family: &quot;MS UI Gothic&quot;; ddo-char-set: 128" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; ddo-char-set: 128" />
+  </StyleSheet>
+  <Sections>
+{RPX_Section}
+{RPX_Field}
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <DataSources>
+    <XmlDataSource FileURL="C:\Users\yhagihara\AppData\Roaming\NKS\TackLabeler\RepData.xml"  Pattern="//ClassPreviewFieldCollection" />
+  </DataSources>
+  <Script><![CDATA[Sub Detail_Format
+	dim i as Integer
+	for i = 0 to me.Detail.Controls.Count - 1
+		if (TxtFieldShape.Text = "2") Then
+			me.Detail.Controls.Item(i).Visible = False
+		else
+			me.Detail.Controls.Item(i).Visible =true
+		End If
+	Next
+	TxtFieldShape.Visible=false
+	Shape1.Visible = (TxtFieldShape.Text = "1")
+End Sub
+
+
+]]></Script>
+{RPX_PageSettings}
+  <Parameters />
+</ActiveReportsLayout>

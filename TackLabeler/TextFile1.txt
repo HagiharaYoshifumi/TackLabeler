@@ -1,0 +1,16 @@
+﻿●使用データ名
+　《JIS用紙ファイル》
+　　C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\PaperInfo.XML
+
+　《タックシート設定ファイル》
+　　C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\LabelUserData.xml
+
+　《印字データファイル》
+　　C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\UserData.mdb
+
+　《郵便番号データファイル》
+　　C:\Makesource\TackLabeler(タックシール印刷)\TackLabeler\bin\Release\ZipData.mdb
+
+
+●アクティベーションコード
+　　S1BDMDBMMnxUQUNLTEFCRUxFUi5FWEV8MjAxOC8wOS8xMiAxNzoyOToxNA==
