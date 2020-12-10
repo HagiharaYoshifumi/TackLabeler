@@ -23,6 +23,7 @@ Partial Class FrmWordInsData
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmWordInsData))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Column4 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -34,6 +35,7 @@ Partial Class FrmWordInsData
         Me.OptSelectWork1 = New System.Windows.Forms.RadioButton()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.LblMessage = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.Progress = New System.Windows.Forms.ToolStripProgressBar()
         Me.BtnSelWord = New System.Windows.Forms.Button()
         Me.BtnSelFolder = New System.Windows.Forms.Button()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
@@ -49,7 +51,7 @@ Partial Class FrmWordInsData
         Me.MenuClose = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuExecute = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuCancel = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Progress = New System.Windows.Forms.ToolStripProgressBar()
+        Me.BtnExecute = New GrapeCity.Win.Buttons.GcButton()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StatusStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -100,7 +102,7 @@ Partial Class FrmWordInsData
         Me.TxtMasterWord.AllowDrop = True
         Me.TxtMasterWord.Location = New System.Drawing.Point(108, 9)
         Me.TxtMasterWord.Name = "TxtMasterWord"
-        Me.TxtMasterWord.Size = New System.Drawing.Size(376, 19)
+        Me.TxtMasterWord.Size = New System.Drawing.Size(314, 19)
         Me.TxtMasterWord.TabIndex = 1
         '
         'TxtOutputFolder
@@ -108,7 +110,7 @@ Partial Class FrmWordInsData
         Me.TxtOutputFolder.AllowDrop = True
         Me.TxtOutputFolder.Location = New System.Drawing.Point(108, 36)
         Me.TxtOutputFolder.Name = "TxtOutputFolder"
-        Me.TxtOutputFolder.Size = New System.Drawing.Size(376, 19)
+        Me.TxtOutputFolder.Size = New System.Drawing.Size(314, 19)
         Me.TxtOutputFolder.TabIndex = 1
         '
         'OptSelectWork0
@@ -136,23 +138,29 @@ Partial Class FrmWordInsData
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LblMessage, Me.Progress})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 347)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 349)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(539, 23)
+        Me.StatusStrip1.Size = New System.Drawing.Size(542, 23)
         Me.StatusStrip1.TabIndex = 4
         Me.StatusStrip1.Text = "StatusStrip1"
         '
         'LblMessage
         '
         Me.LblMessage.Name = "LblMessage"
-        Me.LblMessage.Size = New System.Drawing.Size(422, 18)
+        Me.LblMessage.Size = New System.Drawing.Size(425, 18)
         Me.LblMessage.Spring = True
         Me.LblMessage.Text = "."
         Me.LblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'Progress
+        '
+        Me.Progress.Name = "Progress"
+        Me.Progress.Size = New System.Drawing.Size(100, 17)
+        Me.Progress.Step = 1
+        '
         'BtnSelWord
         '
-        Me.BtnSelWord.Location = New System.Drawing.Point(490, 7)
+        Me.BtnSelWord.Location = New System.Drawing.Point(428, 7)
         Me.BtnSelWord.Name = "BtnSelWord"
         Me.BtnSelWord.Size = New System.Drawing.Size(36, 23)
         Me.BtnSelWord.TabIndex = 6
@@ -161,7 +169,7 @@ Partial Class FrmWordInsData
         '
         'BtnSelFolder
         '
-        Me.BtnSelFolder.Location = New System.Drawing.Point(490, 36)
+        Me.BtnSelFolder.Location = New System.Drawing.Point(428, 36)
         Me.BtnSelFolder.Name = "BtnSelFolder"
         Me.BtnSelFolder.Size = New System.Drawing.Size(36, 23)
         Me.BtnSelFolder.TabIndex = 6
@@ -208,6 +216,7 @@ Partial Class FrmWordInsData
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.BtnExecute)
         Me.Panel1.Controls.Add(Me.BtnSelWord)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.DataGridView1)
@@ -222,7 +231,7 @@ Partial Class FrmWordInsData
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 26)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(539, 321)
+        Me.Panel1.Size = New System.Drawing.Size(542, 323)
         Me.Panel1.TabIndex = 10
         '
         'ContextMenuStrip1
@@ -253,7 +262,7 @@ Partial Class FrmWordInsData
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuClose, Me.MenuExecute, Me.MenuCancel})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(539, 26)
+        Me.MenuStrip1.Size = New System.Drawing.Size(542, 26)
         Me.MenuStrip1.TabIndex = 11
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -276,17 +285,20 @@ Partial Class FrmWordInsData
         Me.MenuCancel.Size = New System.Drawing.Size(86, 22)
         Me.MenuCancel.Text = "作業中止(&C)"
         '
-        'Progress
+        'BtnExecute
         '
-        Me.Progress.Name = "Progress"
-        Me.Progress.Size = New System.Drawing.Size(100, 17)
-        Me.Progress.Step = 1
+        Me.BtnExecute.Image = CType(resources.GetObject("BtnExecute.Image"), System.Drawing.Image)
+        Me.BtnExecute.Location = New System.Drawing.Point(470, 9)
+        Me.BtnExecute.Name = "BtnExecute"
+        Me.BtnExecute.Size = New System.Drawing.Size(56, 47)
+        Me.BtnExecute.TabIndex = 11
+        Me.BtnExecute.UseVisualStyleBackColor = True
         '
         'FrmWordInsData
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(539, 370)
+        Me.ClientSize = New System.Drawing.Size(542, 372)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -335,4 +347,5 @@ Partial Class FrmWordInsData
     Friend WithEvents MenuExecute As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MenuCancel As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Progress As System.Windows.Forms.ToolStripProgressBar
+    Friend WithEvents BtnExecute As GrapeCity.Win.Buttons.GcButton
 End Class

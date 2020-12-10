@@ -307,7 +307,7 @@ Public Class FrmExcelInsData
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     ''' <remarks></remarks>
-    Private Sub MenuExecute_Click(sender As Object, e As EventArgs) Handles MenuExecute.Click
+    Private Sub MenuExecute_Click(sender As Object, e As EventArgs) Handles MenuExecute.Click, BtnExecute.Click
         DataGridView1.EndEdit()
 
         Select Case True
@@ -326,7 +326,7 @@ Public Class FrmExcelInsData
 
         End Select
 
-       If MsgBox("差し込みExcelファイルを作成していいですか？", 4 + 32, "確認") = MsgBoxResult.No Then
+        If MsgBox("差し込みExcelファイルを作成していいですか？", 4 + 32, "確認") = MsgBoxResult.No Then
             Return
         End If
 
@@ -388,7 +388,7 @@ Public Class FrmExcelInsData
                 Next
             End If
 
-           
+
         End With
         _IsWork = False
         Call ScreenChange(True)
@@ -398,7 +398,7 @@ Public Class FrmExcelInsData
             LblMessage.Text = "ユーザによりキャンセルされました"
         Else
             LblMessage.Text = "Excel作成完了しました"
-        
+
         End If
     End Sub
     ''' <summary>
@@ -492,5 +492,9 @@ Public Class FrmExcelInsData
     ''' <remarks></remarks>
     Private Sub MenuClose_Click(sender As Object, e As EventArgs) Handles MenuClose.Click
         Me.Close()
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
     End Sub
 End Class

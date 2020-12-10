@@ -281,7 +281,7 @@ Public Class FrmWordInsData
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     ''' <remarks></remarks>
-    Private Sub MenuExecute_Click(sender As Object, e As EventArgs) Handles MenuExecute.Click
+    Private Sub MenuExecute_Click(sender As Object, e As EventArgs) Handles MenuExecute.Click, BtnExecute.Click
         DataGridView1.EndEdit()
 
         Select Case True
@@ -383,7 +383,7 @@ Public Class FrmWordInsData
                     End If
                 Next
             End If
-          
+
         End With
         _IsWork = False
         Call ScreenChange(True)

@@ -23,6 +23,7 @@ Partial Class FrmExcelInsData
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmExcelInsData))
         Me.MenuFieldName_All = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuFieldName = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
@@ -34,6 +35,7 @@ Partial Class FrmExcelInsData
         Me.BtnSelFolder = New System.Windows.Forms.Button()
         Me.LblMessage = New System.Windows.Forms.ToolStripStatusLabel()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.Progress = New System.Windows.Forms.ToolStripProgressBar()
         Me.TxtMasterExcel = New System.Windows.Forms.TextBox()
         Me.TxtOutputFolder = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
@@ -42,13 +44,13 @@ Partial Class FrmExcelInsData
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.BtnExecute = New GrapeCity.Win.Buttons.GcButton()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.CmbSelectSheet = New System.Windows.Forms.ComboBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MenuClose = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuExecute = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuCancel = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Progress = New System.Windows.Forms.ToolStripProgressBar()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -81,7 +83,7 @@ Partial Class FrmExcelInsData
         '
         'BtnSelWord
         '
-        Me.BtnSelWord.Location = New System.Drawing.Point(490, 7)
+        Me.BtnSelWord.Location = New System.Drawing.Point(432, 10)
         Me.BtnSelWord.Name = "BtnSelWord"
         Me.BtnSelWord.Size = New System.Drawing.Size(36, 23)
         Me.BtnSelWord.TabIndex = 2
@@ -119,7 +121,7 @@ Partial Class FrmExcelInsData
         '
         'BtnSelFolder
         '
-        Me.BtnSelFolder.Location = New System.Drawing.Point(490, 60)
+        Me.BtnSelFolder.Location = New System.Drawing.Point(432, 59)
         Me.BtnSelFolder.Name = "BtnSelFolder"
         Me.BtnSelFolder.Size = New System.Drawing.Size(36, 23)
         Me.BtnSelFolder.TabIndex = 7
@@ -137,18 +139,24 @@ Partial Class FrmExcelInsData
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LblMessage, Me.Progress})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 353)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 354)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Size = New System.Drawing.Size(542, 23)
         Me.StatusStrip1.TabIndex = 12
         Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'Progress
+        '
+        Me.Progress.Name = "Progress"
+        Me.Progress.Size = New System.Drawing.Size(100, 17)
+        Me.Progress.Step = 1
         '
         'TxtMasterExcel
         '
         Me.TxtMasterExcel.AllowDrop = True
         Me.TxtMasterExcel.Location = New System.Drawing.Point(108, 9)
         Me.TxtMasterExcel.Name = "TxtMasterExcel"
-        Me.TxtMasterExcel.Size = New System.Drawing.Size(376, 19)
+        Me.TxtMasterExcel.Size = New System.Drawing.Size(318, 19)
         Me.TxtMasterExcel.TabIndex = 1
         '
         'TxtOutputFolder
@@ -156,7 +164,7 @@ Partial Class FrmExcelInsData
         Me.TxtOutputFolder.AllowDrop = True
         Me.TxtOutputFolder.Location = New System.Drawing.Point(108, 60)
         Me.TxtOutputFolder.Name = "TxtOutputFolder"
-        Me.TxtOutputFolder.Size = New System.Drawing.Size(376, 19)
+        Me.TxtOutputFolder.Size = New System.Drawing.Size(318, 19)
         Me.TxtOutputFolder.TabIndex = 6
         '
         'DataGridView1
@@ -199,6 +207,7 @@ Partial Class FrmExcelInsData
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.BtnExecute)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.CmbSelectSheet)
         Me.Panel1.Controls.Add(Me.BtnSelWord)
@@ -212,8 +221,17 @@ Partial Class FrmExcelInsData
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 26)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(542, 327)
+        Me.Panel1.Size = New System.Drawing.Size(542, 328)
         Me.Panel1.TabIndex = 13
+        '
+        'BtnExecute
+        '
+        Me.BtnExecute.Image = CType(resources.GetObject("BtnExecute.Image"), System.Drawing.Image)
+        Me.BtnExecute.Location = New System.Drawing.Point(470, 20)
+        Me.BtnExecute.Name = "BtnExecute"
+        Me.BtnExecute.Size = New System.Drawing.Size(56, 47)
+        Me.BtnExecute.TabIndex = 12
+        Me.BtnExecute.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -230,7 +248,7 @@ Partial Class FrmExcelInsData
         Me.CmbSelectSheet.FormattingEnabled = True
         Me.CmbSelectSheet.Location = New System.Drawing.Point(108, 34)
         Me.CmbSelectSheet.Name = "CmbSelectSheet"
-        Me.CmbSelectSheet.Size = New System.Drawing.Size(376, 20)
+        Me.CmbSelectSheet.Size = New System.Drawing.Size(318, 20)
         Me.CmbSelectSheet.TabIndex = 4
         '
         'MenuStrip1
@@ -261,17 +279,11 @@ Partial Class FrmExcelInsData
         Me.MenuCancel.Size = New System.Drawing.Size(86, 22)
         Me.MenuCancel.Text = "作業中止(&C)"
         '
-        'Progress
-        '
-        Me.Progress.Name = "Progress"
-        Me.Progress.Size = New System.Drawing.Size(100, 17)
-        Me.Progress.Step = 1
-        '
         'FrmExcelInsData
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(542, 376)
+        Me.ClientSize = New System.Drawing.Size(542, 377)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -320,4 +332,5 @@ Partial Class FrmExcelInsData
     Friend WithEvents MenuExecute As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MenuCancel As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Progress As System.Windows.Forms.ToolStripProgressBar
+    Friend WithEvents BtnExecute As GrapeCity.Win.Buttons.GcButton
 End Class
